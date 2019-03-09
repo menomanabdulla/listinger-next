@@ -1819,6 +1819,29 @@
 			display: none;
 		}
 	}
+	.listing-modal-block{
+		display: block;
+		width: 100%;
+		.modal-map-block{
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 568px){
+	.lg-listing-single{
+		li.preview{
+			display: none;
+		}
+	}
+	.listing-full-width-map {
+		.lg-listing-single{
+			display: none;
+		}
+	}
+	.listing-filter-block,
+	.listing-lists-block{
+		padding: 35px 15px;
+	}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
@@ -1948,7 +1971,7 @@
 	}
 }
 
-@media all and (max-width: 439px) {
+@media all and (max-width: 480px) {
 	.lg-listing-review {
 		.goto-review {
 			display: block;
@@ -1972,4 +1995,17 @@
 		}
 	}
 }
+@media all and (max-width: 400px) {
+	.lg-listing-single {
+		.meta-footer{
+			span.phone-number,
+			span.location{
+				float: none;
+				margin: 15px 0;
+				display: block;
+			}
+		}
+	}
+}
+
 

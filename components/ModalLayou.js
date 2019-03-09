@@ -4,6 +4,7 @@ import { Modal } from 'react-bootstrap';
 import SimpleMap from './listing-details/simpleMap';
 import { Scrollbars } from 'react-custom-scrollbars';
 
+
 class ModalLayout extends React.Component {
     constructor(props) {
         super(props);
@@ -15,7 +16,6 @@ class ModalLayout extends React.Component {
           {...this.props}
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
-          centered
         >
             <div className="listing-modal-block">
                 <div className="lg-listing-single">

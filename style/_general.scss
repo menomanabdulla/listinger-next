@@ -577,14 +577,26 @@ button:focus {
     border-top: 1px solid $color-gray2;
     .slick-slider{
         padding: 0 50px;
+        img{
+            margin: 0 auto;
+        }
     }
     .slick-dots{
         display: none !important;
     }
+
 }
 .partner-style-two{
     .lg-inner-page{
         background: $color-white;
+    }
+}
+
+@media all and (max-width: 991px) {
+    .partner-slider-block{
+        .slick-slider{
+            padding: 0;
+        }
     }
 }
 
@@ -690,7 +702,6 @@ button:focus {
 
 */
 .mfp-zoom-in {
-  
     /* start state */
     .mfp-with-anim {
       opacity: 0;

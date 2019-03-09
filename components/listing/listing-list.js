@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Select, Button, Checkbox } from 'antd';
+import { Select,  Checkbox } from 'antd';
+import { ButtonToolbar, Button } from 'react-bootstrap';
+import ModalLayou from '../ModalLayou';
+
 
 const Option = Select.Option;
 const CheckboxGroup = Checkbox.Group;
@@ -11,7 +14,13 @@ const plainOptions2 = ['Play Ground', 'Hot Coffee', 'Wireless Internet'];
 class ListingList extends Component {
     constructor(props){
         super(props);
+        this.state = { 
+            modalShow: false,
+            activeModal: null
+        };
         this.handleChange=this.handleChange.bind(this);
+        this.clickHandler = this.clickHandler.bind(this);
+        this.hideModal = this.hideModal.bind(this);
     }
     handleChange(value) {
         this.props.filter(value);
@@ -20,7 +29,15 @@ class ListingList extends Component {
     onChange(checkedValues) {
         console.log('checked = ', checkedValues);
     }
+    clickHandler(e, index) {
+        this.setState({ activeModal: index })
+    }
+    
+    hideModal() {
+        this.setState({ activeModal: null })
+    }
     render() {
+        let modalClose = () => this.setState({ modalShow: false });
         return (
             <div className="listing-list-block">
                 <div className="listing-filter-block">
@@ -106,9 +123,22 @@ class ListingList extends Component {
                                         </div>
                                         <ul className="meta-head">
                                             <li className="preview">
-                                                <a href="#" className="btn popupMap">
-                                                    <i className="la la-search-plus"></i>
-                                                </a>
+                                                <ButtonToolbar>
+                                                    <button
+                                                        id={ index }
+                                                        variant="primary"
+                                                        className = 'popupMap btn btn-primary'
+                                                        onClick={e => this.clickHandler(e, index)}
+                                                        >
+                                                        <i className="la la-search-plus"></i>
+                                                    </button>
+                                                    <ModalLayou
+                                                        id={ index }
+                                                        show={this.state.activeModal === index}
+                                                        onHide={this.hideModal}
+                                                        modallisting = { item }
+                                                    />
+                                                </ButtonToolbar>
                                             </li>
                                             <li className="bookmark">
                                                 <button className="btn favorite">
