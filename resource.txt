@@ -1,0 +1,48 @@
+//image-linking in reactjs
+https://stackoverflow.com/questions/44175049/how-to-save-images-for-react-application
+//create-next-app
+https://github.com/segmentio/create-next-app
+//nextjs
+https://github.com/zeit/next-plugins/tree/master/packages/next-sass
+//nextjs nested routing
+https://stackoverflow.com/questions/52105699/nested-routes-in-next-js
+//nextCSS and next SCSS use togather
+https://github.com/zeit/next.js/issues/3852
+//react-bootstrap-navbar
+https://react-bootstrap.github.io/components/navbar/
+//Bootstrap-Navigation
+https://raw.githubusercontent.com/pardel/react-bootstrap4-part1/master/src/components/Navigation.js
+https://m.pardel.net/react-and-bootstrap-4-part-1-setup-navigation-d4767e2ed9f0
+//react-leaflet.js for map
+https://react-leaflet.js.org/docs/en/examples.html
+//lightbox for image popup
+https://github.com/frontend-collective/react-image-lightbox
+https://reactjsexample.com/tag/lightbox/
+
+//listing map example
+https://github.com/google-map-react/google-map-react
+//map with marker info
+https://github.com/fullstackreact/google-maps-react/issues/113
+https://github.com/fullstackreact/google-maps-react
+
+
+//react-slick slider
+https://react-slick.neostack.com/docs/example/responsive
+
+//scrool-spy
+https://www.npmjs.com/package/react-scrollspy
+
+//cosmic js 
+
+//static deployment 
+https://github.com/zeit/next.js/
+
+//deploying static html form nextjs
+https://github.com/zeit/next.js/issues/2581
+
+
+//workable process for deploying next.js in static HTML
+https://medium.com/@adibas03/next-js-github-pages-contd-42a1dd47f6bc
+https://github.com/zeit/next.js/issues/2759
+
+referance: https://github.com/zeit/next.js/issues/604

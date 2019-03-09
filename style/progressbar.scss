@@ -1,0 +1,45 @@
+/*
+|----------------------------------------------------------------------------
+| Progressbar
+|----------------------------------------------------------------------------
+*/
+
+@import './partial/variables';
+@import './partial/mixins';
+
+.progressbar-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0 30px 0;
+}
+.progressbar-block{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    text-align: center;
+}
+.progressbar-one-block{
+    .ant-progress-text{
+        font-size: 30px;
+        color: $color-red;
+    }
+}
+.progressbar-two-block{
+    .ant-progress-text{
+        font-size: 22px;
+        color: #5352ed;
+    }
+}
+.progressbar-three-block{
+    .ant-progress-text{
+        font-size: 22px;
+        color: #54a0ff;
+    }
+}
+.progressbar-four-block{
+    .ant-progress-text{
+        font-size: 22px;
+        color: #8c7ae6;
+    }
+}

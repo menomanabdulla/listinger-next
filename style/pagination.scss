@@ -1,0 +1,38 @@
+
+/*
+|----------------------------------------------------------------------------
+| Pagination
+|----------------------------------------------------------------------------
+*/
+
+@import './partial/variables';
+@import './partial/mixins';
+.pagination {
+	justify-content: center;
+	&.mar-30 {
+		margin-top: 20px;
+	}
+	.nav-links {
+		.page-numbers {
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			border: 1px solid rgba($color-black, .08);
+			border-radius: 3px;
+			background: $color-gray;
+			display: inline-block;
+			outline: none;
+			text-decoration: none;
+			margin: 10px 5px 0;
+			text-align: center;
+			transition: all .3s ease;
+			color: $color-secondary;
+			&.current,
+			&:hover {
+				color: $color-red;
+				background: $color-white;
+				border-color: rgba($color-red, .25);
+			}
+		}
+	}
+}

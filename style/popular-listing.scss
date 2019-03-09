@@ -1,0 +1,40 @@
+/*
+|----------------------------------------------------------------------------
+| Popular Listing
+|----------------------------------------------------------------------------
+*/
+
+@import './partial/variables';
+@import './partial/mixins';
+
+.popular-listing-block {
+    .listging-tab-nav-2.nav-pills {
+        justify-content: flex-end;
+
+        .nav-item {
+            border-bottom: 2px solid $color-gray2;
+
+            &:last-of-type {
+                a {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        a.active {
+            &:before {
+                bottom: -2px;
+            }
+        }
+    }
+}
+
+/* remon */ 
+@media screen and (max-width:767px) {
+    .popular-listing-block {
+        .listging-tab-nav-2.nav-pills {
+            justify-content: flex-start;
+            margin-bottom: 40px;
+        }
+    }
+}

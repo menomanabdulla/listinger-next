@@ -1,0 +1,100 @@
+
+
+/*
+|----------------------------------------------------------------------------
+| Call to Action
+|----------------------------------------------------------------------------
+*/
+@import './partial/variables';
+@import './partial/mixins';
+.lg-call-to-action {
+	display: flex;
+	h2 {
+		flex: 0 0 40%;
+		font-size: 24px;
+		font-weight: 500;
+		color: $color-primary;
+		span {
+			display: block;
+		}
+	}
+	.newsletter-form {
+		flex: 0 0 60%;
+		form {
+			position: relative;
+			input {
+				display: block;
+				width: 100%;
+				height: 90px;
+				border-radius: 5px;
+				border: 1px solid rgba($color-black, .05);
+				background: $color-white;
+				padding: 20px;
+				outline: 0;
+				box-shadow: 0;
+			}
+			button {
+				position: absolute;
+				top: 20px;
+				right: 20px;
+				background: $color-red;
+				color: $color-white;
+				border: 0;
+				border-radius: 5px;
+				height: 50px;
+				padding: 0 30px;
+				cursor: pointer;
+			}
+			p {
+				margin-top: 10px;
+				color: $color-gray3;
+				span {
+					color: $color-red;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media all and (max-width: 1199px) {
+	.lg-call-to-action {
+		h2 {
+			flex: 0 0 30%;
+		}
+		.newsletter-form {
+			flex: 0 0 70%;
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+	.lg-call-to-action {
+		display: block;
+		h2 {
+			margin-bottom: 10px;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 439px) {
+	.lg-call-to-action {
+		.newsletter-form {
+			form {
+				position: static;
+				input {
+					height: 50px;
+				}
+				button {
+					position: static;
+					margin-top: 20px;
+				}
+			}
+		}
+	}
+}

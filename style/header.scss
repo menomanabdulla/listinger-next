@@ -1,0 +1,79 @@
+
+/*
+|----------------------------------------------------------------------------
+| Page Header
+|----------------------------------------------------------------------------
+*/
+
+@import './partial/variables';
+@import './partial/mixins';
+.page-header-bg {
+	background: url('/static/images/bg/page-header.jpg') no-repeat center;
+	background-size: cover;
+	position: relative;
+	&:before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 150px;
+		background: linear-gradient(to top, $color-black, rgba($color-black, 0));
+		opacity: .75;
+		content: '';
+	}
+}
+
+.page-header-inner {
+	height: 325px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 20px;
+	h2 {
+		font-size: 26px;
+		color: $color-white;
+		font-weight: 700;
+		font-family: $basefont;
+	}
+	.breadcrumb {
+		background: transparent;
+		align-items: center;
+		margin-bottom: 0;
+		li {
+			color: $color-white;
+			&:hover {
+				a {
+					color: $color-red;
+				}
+			}
+			a {
+				color: $color-white;
+				transition: all .3s ease;
+				text-decoration: none;
+			}
+		}
+		.breadcrumb-item+.breadcrumb-item {
+			padding-left: 15px;
+			&:before {
+				padding-right: 15px;
+				content: "\f112";
+				font: normal normal normal 14px/1 LineAwesome;
+				color: $color-white;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+	.page-header-inner {
+		align-items: center;
+		justify-content: flex-end;
+		flex-direction: column;
+		h2 {
+			margin-bottom: 0;
+		}
+		.breadcrumb {
+			padding-top: 0;
+		}
+	}
+}
