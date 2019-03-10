@@ -1,12 +1,10 @@
 
 
 import listingData from '../data';
-
 const initialState = {
     listingData,
     filterListing: listingData
 }
-
 function listingReducer (state = initialState,action){
     switch(action.type){
         case 'spa':{
@@ -42,7 +40,7 @@ function listingReducer (state = initialState,action){
         case 'allcatagories':{
             return {
                 ...state,
-                filterListing: state.listingData.filter( item => item.typeClass === 'allcatagories')
+                filterListing: state.listingData
             }
         }
         default: return state

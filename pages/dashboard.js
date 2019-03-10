@@ -8,47 +8,75 @@ import Footer from '../components/footer';
 import 'antd/dist/antd.css';
 import '../style/dashboard.scss';
 
-const data = (canvas) => {
-  return{
-    labels: ['1', '2', '3', '4','5','6','7'],
-    datasets:[{
-        fill: true,
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3, 9],
-        backgroundColor: [
-            'rgba(255, 99, 132, 0.2)',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
-            'rgba(255, 159, 64, 0.2)'
-        ],
-        borderColor:  [
-            'rgba(255,99,132,1)',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
+const data = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [
+      {
+        label: 'View',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(119,139,235,0.0)',
+        borderColor: 'rgba(119,139,235,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(119,139,235,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 6,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(119,139,235,1)',
+        pointHoverBorderColor: 'rgba(119,139,235,1)',
+        pointHoverBorderWidth: 5,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [30, 28, 25, 28, 35, 37, 30]
+      },{
+        label: 'Favorite',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(230,103,103,00)',
+        borderColor: 'rgba(230,103,103,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(230,103,103,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 6,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(230,103,103,1)',
+        pointHoverBorderColor: 'rgba(230,103,103,1)',
+        pointHoverBorderWidth: 5,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [20, 20, 20, 18, 20, 25, 20]
+      },
+      {
+        label: 'Ratting',
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: 'rgba(240,185,69,00)',
+        borderColor: 'rgba(240,185,69,1)',
+        borderCapStyle: 'butt',
+        borderDash: [],
+        borderDashOffset: 0.0,
+        borderJoinStyle: 'miter',
+        pointBorderColor: 'rgba(240,185,69,1)',
+        pointBackgroundColor: '#fff',
+        pointBorderWidth: 6,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: 'rgba(240,185,69,1)',
+        pointHoverBorderColor: 'rgba(240,185,69,1)',
+        pointHoverBorderWidth: 5,
+        pointRadius: 1,
+        pointHitRadius: 10,
+        data: [12, 14, 18, 14, 13, 12, 10]
       }
     ]
-  }
 };
 const options={
-    legend: {
-        display: false
-    },
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
+    scales: { xAxes: [{ display: false, }], yAxes: [{ display: false, }], }
 };
 
 class DashboardFrame extends React.Component {
@@ -65,8 +93,8 @@ class DashboardFrame extends React.Component {
                                 <span><i className="la la-area-chart"></i>Statistics</span>
                                 <div className="chart-filter">
                                     <select>
-                                        <option value="">Today</option>
                                         <option value="">This Week</option>
+                                        <option value="">Today</option>
                                         <option value="">This Month</option>
                                         <option value="">One Year</option>
                                     </select>
@@ -74,7 +102,7 @@ class DashboardFrame extends React.Component {
                                 </div>
                             </div>
                             <div className="chart-body">
-                                <Line data={data} options={options}/>
+                                <Line data={data}  options={options} />
                             </div>
                         </div>
                     </div>
@@ -108,5 +136,3 @@ class DashboardFrame extends React.Component {
 };
 export default DashboardFrame;
 
-            
- 

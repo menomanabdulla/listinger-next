@@ -7,7 +7,7 @@ import Testimonial from '../components/testimonial';
 import ListingGrid from '../components/listing/listing-grid';
 import ListingMap from '../components/listing/listing-map';
 import Partner from '../components/partner';
-import Footer from '../components/footer';
+import FooterTwo from '../components/footerTwo';
 import Navigation from '../components/navigation';
 
 
@@ -328,7 +328,7 @@ class Home extends Component{
       <div className="partner-style-two">
         <Partner />
       </div>
-      <Footer />
+      <FooterTwo />
     </div>
     );
   }

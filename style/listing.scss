@@ -1601,6 +1601,7 @@
 			&:hover{
 				color: $color-red2;
 				outline: none;
+				box-shadow: none;
 			}
 		}
 		.ant-select-selection__rendered{
@@ -1640,6 +1641,38 @@
 			border-color: $color-red;
 		}
 	}
+	.btn-primary{
+		line-height: 28px;
+		margin-right: 15px;
+		margin-bottom: 7px;
+	}
+	.btn-primary:not(:disabled):not(.disabled).active,
+	 .btn-primary:not(:disabled):not(.disabled):active,
+	.show>.btn-primary.dropdown-toggle{
+		box-shadow: none;
+		background: $color-red;
+	}
+	.btn-primary.focus,
+	.btn-primary:focus{
+		box-shadow: none;
+	}
+}
+.ant-select-dropdown-menu-item{
+	&:hover,
+	&:focus,
+	&:active{
+		background: $color-red2 !important;
+		color: $color-white !important;
+	}
+}
+.ant-select-focused .ant-select-selection,
+.ant-select-selection:focus,
+.ant-select-selection:active{
+	box-shadow: none;
+}
+.ant-select-dropdown-menu-item-active{
+	background: $color-red2 !important;
+	color: $color-white !important;
 }
 .listing-custom-filter-block{
 	margin-bottom: 30px;
@@ -1765,7 +1798,7 @@
 		-moz-border-radius: 0 0 0 15px;
 		-ms-border-radius: 0 0 0 15px;
 		-o-border-radius: 0 0 0 15px;
-}
+	}
 }
 .listing-detils-desc-block{
 	padding-bottom: 30px;

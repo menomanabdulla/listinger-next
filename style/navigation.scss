@@ -193,7 +193,15 @@
             }
         }
         .dropdown-item:active{
-            background: $color-purple;;
+            color: $color-red;
+            background: rgba(249,60,100,0.8);
+        }
+        .dropdown-item{
+            &:hover,
+            &:active{
+                color: $color-red;
+                background: rgba(249,60,100,0.08);
+            }
         }
     }
    .nav-item-static{
