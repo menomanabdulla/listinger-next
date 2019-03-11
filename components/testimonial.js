@@ -15,13 +15,13 @@ export default class Testimonial extends Component {
     };
     return (
       <div className="testimonial-block-wrap">
+        <h3 className="testimonial-title">
+            Trusted by <br/>
+            Over 50k+ Customers
+        </h3>  
         <Slider {...settings}>
             <div>
                 <div className="testimonial-block">
-                    <h3 className="testimonial-title">
-                        Trusted by <br/>
-                        Over 50k+ Customers
-                    </h3>  
                     <p>
                         "On the other hand, we denounce with righteous indignation and 
                         dislike men who are so beguiled and demoralized by the charms 
@@ -43,14 +43,11 @@ export default class Testimonial extends Component {
             </div>
             <div>
                 <div className="testimonial-block">
-                    <h3 className="testimonial-title">
-                        Trusted by <br/>
-                        Over 100k+ Customers
-                    </h3>  
                     <p>
                         "On the other hand, we denounce with righteous indignation and 
                         dislike men who are so beguiled and demoralized by the charms 
-                        of pleasure of the moment, so blinded by desire Output”
+                        of pleasure of the moment, so blinded by desire Output,
+                        of pleasure of the moment, so blinded by desire”
                     </p>
                     <div className="testimonial-author">
                         <div className="thumb-block">
@@ -68,14 +65,10 @@ export default class Testimonial extends Component {
             </div>
             <div>
                 <div className="testimonial-block">
-                    <h3 className="testimonial-title">
-                        Trusted by <br/>
-                        Over 50k+ Customers
-                    </h3>  
                     <p>
                         "On the other hand, we denounce with righteous indignation and 
                         dislike men who are so beguiled and demoralized by the charms 
-                        of pleasure of the moment, so blinded by desire”
+                        of pleasure of the moment, so blinded by desire to be perfect”
                     </p>
                     <div className="testimonial-author">
                         <div className="thumb-block">

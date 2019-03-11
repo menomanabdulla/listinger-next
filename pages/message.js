@@ -105,9 +105,9 @@ const DashboardFrame = () => (
                       </div>
                       <div className="message file-send">
                           <div className="images">
-                          <img src="/static/images/dashboard/avater-1.jpg" className="img-fluid" alt="" />
-                          <img src="/static/images/dashboard/avater-1.jpg" className="img-fluid" alt="" />
-                          <img src="/static/images/dashboard/avater-1.jpg" className="img-fluid" alt="" />
+                          <img src="/static/images/dashboard/avater-3.jpg" className="img-fluid" alt="" />
+                          <img src="/static/images/dashboard/avater-4.jpg" className="img-fluid" alt="" />
+                          <img src="/static/images/dashboard/avater-5.jpg" className="img-fluid" alt="" />
                           <span className="more">+12</span>
                           </div>
                       </div>

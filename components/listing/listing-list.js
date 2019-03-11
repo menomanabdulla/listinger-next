@@ -4,7 +4,6 @@ import { Select,  Checkbox } from 'antd';
 import { ButtonToolbar, Button } from 'react-bootstrap';
 import ModalLayou from '../ModalLayou';
 
-
 const Option = Select.Option;
 const CheckboxGroup = Checkbox.Group;
 

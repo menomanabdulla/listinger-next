@@ -76,6 +76,10 @@ a {
 .padding-b80 {
     padding-bottom: 80px;
 }
+.padding-tb120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .bg-gray {
     background: #f9f9f9;
 }
@@ -571,7 +575,6 @@ button:focus {
 }
 
 //partner section
-
 .partner-slider-block{
     padding: 95px 0;
     border-top: 1px solid $color-gray2;
@@ -583,6 +586,51 @@ button:focus {
     }
     .slick-dots{
         display: none !important;
+    }
+    .slick-next, .slick-prev{
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 1px solid #e7e7e7;
+        width: 40px;
+        height: 40px;
+        top: 15px;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+
+        &:hover{
+            background: #e7e7e7;
+            &:before{
+                color: #c4c4c9;
+            }
+        }
+    }
+    .slick-next:before,
+    .slick-prev:before{
+        font-family: "LineAwesome";
+        opacity: 1;
+        font-size: 18px;
+        color: #c4c4c9;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        -ms-transition: all 0.3s ease-in;
+        -o-transition: all 0.3s ease-in;
+        
+    }
+    .slick-next:before{
+        content: "\f112";
+    }
+    
+    .slick-prev:before{
+        content: "\f111";
+        
     }
 
 }
@@ -602,12 +650,6 @@ button:focus {
 
 //testimonial slider
 .testimonial-block{
-    h3{
-        color: $color-primary;
-        font-size: 30px;
-        line-height: 40px;
-        margin-bottom: 35px;
-    }
     p{
         font-size: 18px;
         line-height: 30px;
@@ -628,7 +670,6 @@ button:focus {
         }
     }
     .info-block{
-
         h4{
             font-weight: 500;
             font-size: 16px;
@@ -643,6 +684,12 @@ button:focus {
 }
 .testimonial-block-wrap{
     position: relative;
+    h3{
+        color: $color-primary;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 35px;
+    }
     &:before{
         position: absolute;
         right: -10px;

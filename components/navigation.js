@@ -100,10 +100,10 @@ class NavbarOne extends Component {
                                 <Nav.Link href="/">
                                     <i className="la la-user"></i>Login
                                 </Nav.Link>
-                                <button className="btn btn-one">
+                                <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
                                     Add Listing
-                                </button>
+                                </Nav.Link>
                             </div>
                         </Nav>
                     </Navbar.Collapse>
@@ -156,10 +156,10 @@ class NavbarOne extends Component {
                                 <Nav.Link href="/">
                                     <i className="la la-user"></i>Login
                                 </Nav.Link>
-                                <button className="btn btn-one">
+                                <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
                                     Add Listing
-                                </button>
+                                </Nav.Link>
                             </div>
                         </Nav>
                     </Navbar.Collapse>
