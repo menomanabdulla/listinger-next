@@ -74,7 +74,7 @@ class ListingList extends Component {
                 <div className="listing-lists-block">
                     <div className="listing-custom-filter-block">
                         <div className="custom-filter-title-block">
-                            <h3>7 Results For <span>"Custom Filter"</span></h3>
+                            <h3>{this.props.listing.filterListing.length} Results For <span>"Custom Filter"</span></h3>
                         </div>
                         <div className="custom-filter-grid-block">
                             <Select defaultValue="allcatagories" style={{ width: 'auto' }} onChange={this.handleChange}>
@@ -85,14 +85,14 @@ class ListingList extends Component {
                                 <Option value="cart"><i className="la la-hotel"></i> Shopping</Option>
                                 <Option value="spa"><i className="la la-hotel"></i> Spa Care</Option>
                             </Select>
-                            <div className="list-grid-control-block">
+                            {/*<div className="list-grid-control-block">
                                 <div className="grid-control">
                                     <i className="la la-th-large"></i>
                                 </div>
                                 <div className="list-control">
                                     <i className="la la-th-list"></i>
                                 </div>
-                            </div>
+                            </div>*/}
                         </div>
                     </div>
                     {
