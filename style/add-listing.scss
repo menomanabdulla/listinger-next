@@ -6,7 +6,9 @@
 
 @import './partial/variables';
 @import './partial/mixins';
-
+.addlisting-sidebar{
+    margin-bottom: 30px;
+}
 .add-listing-form {
     background: $color-white;
     border: 1px solid $color-gray4;
@@ -409,3 +411,10 @@
     }
 }
 
+@media screen and (max-width: 850px){
+    .add-listing-form{
+        ul{
+            padding: 0;
+        }
+    }
+}

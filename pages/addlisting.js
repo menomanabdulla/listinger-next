@@ -58,8 +58,8 @@ const AddListing = () =>(
         <div className="section-add-listing bg-gray padding-tb120">
         <div className="container">
             <div className="row main-content">
-                <div className="col-3 sidebar">
-                    <div className="sidebar__inner">
+                <div className="col-lg-3 sidebar">
+                    <div className="sidebar__inner addlisting-sidebar">
                         <div className="lg-add-listing-navigation">
                             <h5 className="entry-title"><i className="la la-chevron-circle-down"></i>navigation</h5>
                             <ul className="navigation-list">
@@ -76,7 +76,7 @@ const AddListing = () =>(
                         </div>
                     </div>
                 </div>
-                <div className="col-9">
+                <div className="col-lg-9">
                     <form id="insertdataform" className="add-listing-form" method="POST" encType="multipart/form-data">
                         <Scrollspy items={ [
                             'listingtitle', 

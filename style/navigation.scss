@@ -36,6 +36,9 @@
                     color: inherit;
                 }
             }
+            .nav-link.nav-btn{
+                color: $color-white;
+            }
         }
         .header-form-one{
             display: none;
@@ -50,6 +53,9 @@
         }
         .nav-item-static .nav-link:before{
             background: rgba(0,0,0,0.1);
+        }
+        .nav-item-static .nav-link.nav-btn:before{
+            content: none;
         }
         .navbar-brand{
             margin-right: 10%;

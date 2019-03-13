@@ -647,6 +647,16 @@ button:focus {
         }
     }
 }
+@media all and (max-width: 568px){
+    .partner-slider-block{
+        .slick-prev{
+            left: 0;
+        }
+        .slick-next{
+            right: 0;
+        }
+    }
+}
 
 //testimonial slider
 .testimonial-block{
