@@ -6,6 +6,7 @@ import Navigation from '../components/navigation';
 import Overview from '../components/listing-details/overview';
 import Rerview from '../components/listing-details/review';
 import Photos from '../components/listing-details/photos';
+import SearchFormOne from '../components/search-form-one';
 import Footer from '../components/footer';
 
 //css
@@ -16,7 +17,11 @@ import '../style/listing.scss';
 const ListingDetails = () =>(
     <div>
         <Head title="Listing Details"/>
-        <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+        <Navigation
+            imgSrc = {'/static/images/logo.png'}
+            containerCls = {'static'}
+            SearchForm = { <SearchFormOne /> } 
+        />
         <div className="listing-details-page-header lg-page-header-bg">
             <div className="container">
                 <div className="row">

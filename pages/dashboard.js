@@ -3,6 +3,7 @@ import Head from '../components/head';
 import Dashboard from '../components/dashboard/dashboardTemplate';
 import {Line} from 'react-chartjs-2';
 import Navigation from '../components/navigation';
+import SearchFormOne from '../components/search-form-one';
 import Footer from '../components/footer';
 //css
 import 'antd/dist/antd.css';
@@ -84,7 +85,11 @@ class DashboardFrame extends React.Component {
     return (
         <div>
             <Head title="Dashboard"/>
-            <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+            <Navigation
+                imgSrc = {'/static/images/logo.png'}
+                containerCls = {'static'}
+                SearchForm= { <SearchFormOne /> } 
+            />
             <Dashboard>
                 <div className="row">
                     <div className="col-lg-8">

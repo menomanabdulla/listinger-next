@@ -381,10 +381,10 @@ ul.lg-categorie {
         }
     }
 }
-/* remon */
+
 /* medi all 1600 removed */
 
-/* remon */
+
 @media all and (max-width:1199px){
 	.lg-banner{
 		&.style-two{
@@ -503,7 +503,7 @@ ul.lg-categorie {
         img {
             border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
-			width: 100%; /* remon */
+			width: 100%; 
         }
         &:after {
             content: '';

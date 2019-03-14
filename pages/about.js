@@ -11,6 +11,7 @@ import '../style/_general.scss';
 import '../style/header.scss';
 import '../style/about.scss';
 import 'lightbox-react/style.css'; 
+import SearchFormOne from '../components/search-form-one';
 
 const images = [
     Video
@@ -30,7 +31,11 @@ class About extends Component{
         return (
             <div>
                 <Head title="About | Listing"/>
-                <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+                 <Navigation
+                    imgSrc = {'/static/images/logo.png'}
+                    containerCls = {'static'}
+                    SearchForm = { <SearchFormOne /> } 
+                />
                 <div className="page-header page-header-bg">
                     <div className="container">
                         <div className="row">

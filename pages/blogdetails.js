@@ -2,13 +2,18 @@ import React from 'react';
 import Head from '../components/head';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
+import SearchFormOne from '../components/search-form-one';
 //css
 import '../style/_general.scss';
 import '../style/blog.scss';
 const BlogDetails = () =>(
     <div>
         <Head title="News Details"/>
-        <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+        <Navigation
+            imgSrc = {'/static/images/logo.png'}
+            containerCls = {'static'}
+            SearchForm = { <SearchFormOne /> } 
+        />
         <div className="padding-tb110 padding-b80 lg-inner-page">
             <div className="container">
                 <div className="row">

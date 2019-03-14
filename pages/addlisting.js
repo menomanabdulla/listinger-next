@@ -11,6 +11,7 @@ import 'antd/dist/antd.css';
 import '../style/_general.scss';
 import '../style/header.scss';
 import '../style/add-listing.scss';
+import SearchFormOne from '../components/search-form-one';
 
 const Option = Select.Option;
 
@@ -36,8 +37,11 @@ function handleChange(value) {
 const AddListing = () =>(
     <div>
         <Head title="Add Listing | Listing"/>
-        <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
-
+        <Navigation
+            imgSrc = {'/static/images/logo.png'}
+            containerCls = {'static'}
+            SearchForm = { <SearchFormOne /> } 
+        />
         <div className="page-header page-header-bg">
             <div className="container">
                 <div className="row">

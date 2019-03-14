@@ -2,6 +2,7 @@ import React from 'react';
 import Head from '../components/head';
 import Dashboard from '../components/dashboard/dashboardTemplate';
 import Navigation from '../components/navigation';
+import SearchFormOne from '../components/search-form-one';
 import Footer from '../components/footer';
 //css
 import 'antd/dist/antd.css';
@@ -10,7 +11,11 @@ import '../style/dashboard.scss';
 const DashboardFrame = () => (
   <div>
     <Head title="Dashboard | MyListing"/>
-    <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+    <Navigation
+        imgSrc = {'/static/images/logo.png'}
+        containerCls = {'static'}
+        SearchForm = { <SearchFormOne /> } 
+    />
     <Dashboard>
       <div className="row">
           <div className="col">

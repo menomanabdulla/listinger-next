@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from '../components/head';
 import Navigation from '../components/navigation';
+import SearchFormOne from '../components/search-form-one';
 import Footer from '../components/footer';
 
 import '../style/_general.scss';
@@ -10,7 +11,11 @@ import '../style/contact.scss';
 const Contact = () =>(
     <div>
         <Head title="Contact | Listing"/>
-        <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+        <Navigation
+          imgSrc = {'/static/images/logo.png'}
+          containerCls = {'static'}
+          SearchForm = { <SearchFormOne /> } 
+        />
 
         <div className="page-header page-header-bg">
             <div className="container">

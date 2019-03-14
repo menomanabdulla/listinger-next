@@ -9,7 +9,7 @@ import ListingMap from '../components/listing/listing-map';
 import Partner from '../components/partner';
 import FooterTwo from '../components/footerTwo';
 import Navigation from '../components/navigation';
-
+import SearchFormTwo from '../components/search-form-two';
 
 import '../style/_general.scss';
 import '../style/banner.scss';
@@ -26,14 +26,19 @@ class Home extends Component{
     this._isMounted = true;
   }
   componentWillUnmount() {
-    this._isMounted = false;
+    //this._isMounted = false;
  }
   render() {
     return(
     <div>
       <Head title="Home" />
         <section className="lg-banner lg-banner-one">
-          <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+          <Navigation 
+          imgSrc = {'/static/images/logo.png'} 
+          containerCls = {'static'} 
+          searchOn = { true }
+          SearchForm = { <SearchFormTwo /> }
+          />
           <div className="container">
             <div className="section-heading text-white text-left">
               <h3 className="title">Let’s Explore Your City</h3>
@@ -82,7 +87,7 @@ class Home extends Component{
               </li>
             </ul>
             <form className="lg-mulitsearch" action="#" method="GET">
-              {/* remon cols changes */ }
+              className
               <div className="row">
                 <div className="col-md col-12">
                   <input type="hidden" name="search" value="listing" />

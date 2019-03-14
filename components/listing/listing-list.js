@@ -67,7 +67,7 @@ class ListingList extends Component {
                             <CheckboxGroup options={plainOptions1} defaultValue={['']} onChange={this.onChange} />
                         </div>
                         <div className="checkbox-group">
-                            <CheckboxGroup options={plainOptions2} defaultValue={['Play Ground']} onChange={this.onChange} />
+                            <CheckboxGroup options={plainOptions2} defaultValue={['']} onChange={this.onChange} />
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,6 @@ class ListingList extends Component {
 const mapDispatchToProps = (dispatch, ownProps) =>{
     return{
         filter: (value) =>{
-            //console.log(value)
             dispatch({type: value});
         }
     }

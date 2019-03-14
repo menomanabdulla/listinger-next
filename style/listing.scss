@@ -94,7 +94,7 @@
                   list-style: none;
                   margin-bottom: 0;
 				  padding-left: 0;
-				  /* remon */
+				  
 				  letter-spacing: 2px;
                   li {
                       display: inline-block;
@@ -454,7 +454,7 @@
 		font-weight: 500;
 		text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
 		margin-bottom: 5px;
-		color: #ffffff; /* remon */
+		color: #ffffff; 
 	}
 	p {
 		font-size: 14px;
@@ -572,15 +572,14 @@
 		}
 	}
 }
-
 .listing-tab-navigation-block {
 	border-bottom: 1px solid rgba($color-black, .08);
 }
 .listging-tab-nav.nav-pills{
 	margin-top: 20px;
 	a {
-		margin-right: 30px;
-		padding-right: 15px;
+		padding-right: 35px;
+		padding-left: 35px;
 		display: inline-block;
 		font-size: 16px;
 		font-weight: 500;
@@ -588,7 +587,6 @@
 		text-decoration: none;
 		padding-bottom: 12px;
 		padding-top: 20px;
-		padding-left: 0;
 		i {
 			margin-right: 8px;
 			color: $color-secondary;
@@ -1649,12 +1647,27 @@
 	.btn-primary:not(:disabled):not(.disabled).active,
 	 .btn-primary:not(:disabled):not(.disabled):active,
 	.show>.btn-primary.dropdown-toggle{
-		box-shadow: none;
-		background: $color-red;
+		box-shadow: none;  
+		color: #f93c64!important;
+		background: rgba(249, 60, 100, 0.08);
+		border-color: transparent;
 	}
 	.btn-primary.focus,
 	.btn-primary:focus{
 		box-shadow: none;
+	}
+	.btn-primary{
+		border: 1px solid $color-gray4;
+		background: $color-gray;
+		color: $color-secondary !important;
+		.la-exchange{
+			margin-right: 10px;
+		}
+		&:hover{
+			border-color: transparent;
+			color: #f93c64!important;
+			background: rgba(249, 60, 100, 0.08);
+		}
 	}
 }
 .ant-select-dropdown-menu-item{
@@ -1815,7 +1828,7 @@
 	-ms-border-radius: 10px;
 	-o-border-radius: 10px;
 }
-/* remon */ 
+ 
 @media all and (min-width:1200px){
 	.listing-fixed-map .listing-map-block{
 		position: fixed;
@@ -1826,7 +1839,7 @@
 	}
 }
 
-/* remon */
+
 @media screen and (max-width:1199px){
 	.listing-map-block{
 		height: 500px;
@@ -1850,7 +1863,7 @@
 	}
 }
 
-/* remon */
+
 @media screen and (max-width:991px){
 	.listing-full-width-map {
 		.absolute-container{
@@ -1977,7 +1990,7 @@
 	}
 }
 
-/* remon */
+
 @media all and (max-width: 575px) {
 	.lg-listing-photo {
 		.item {

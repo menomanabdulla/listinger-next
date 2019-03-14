@@ -2,6 +2,7 @@ import React from 'react';
 import Head from '../components/head';
 import Dashboard from '../components/dashboard/dashboardTemplate';
 import Navigation from '../components/navigation';
+import SearchFormOne from '../components/search-form-one';
 import Footer from '../components/footer';
 //css
 import 'antd/dist/antd.css';
@@ -10,7 +11,11 @@ import '../style/dashboard.scss';
 const DashboardFrame = () => (
   <div>
     <Head title="Dashboard | Addpromotion"/>
-    <Navigation imgSrc = {'/static/images/logo.png'} containerCls = {'static'} />
+    <Navigation
+        imgSrc = {'/static/images/logo.png'}
+        containerCls = {'static'}
+        SearchForm = { <SearchFormOne /> } 
+    />
     <Dashboard>
       <div className="lg-dash-content-block">
           <div className="content-head">
