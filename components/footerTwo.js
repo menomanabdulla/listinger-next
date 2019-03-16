@@ -4,7 +4,7 @@ import '../style/footer.scss';
 
 const FooterTwo = () =>(
     <footer className="footer-bg">
-      <div className="footer-top padding-top-120">
+      <div className="footer-top padding-top-100">
         <div className="container">
           <div className="row">
             <div className="col-xl-5 col-lg-6">
@@ -28,7 +28,7 @@ const FooterTwo = () =>(
           </div>
         </div>
       </div>
-      <div className="footer-widget-wrapper padding-bottom-70">
+      <div className="footer-widget-wrapper padding-bottom-40">
         <div className="container">
           <div className="row">
             <div className="col-xl-3 col-lg-4 col-sm-6">
@@ -49,7 +49,6 @@ const FooterTwo = () =>(
                   <li><a href="#">Cafe & Bar</a></li>
                   <li><a href="#">Hotel</a></li>
                   <li><a href="#">Spa & Beauty</a></li>
-                  <li><a href="#">Shop</a></li>
                 </ul>
               </div>
             </div>
@@ -88,7 +87,7 @@ const FooterTwo = () =>(
           <div className="col">
             <div className="footer-bottom">
               <p>&copy; 2019, <a href="#">ListinGer</a>. All Rights Reserved. <span><a href="#">Legal</a></span> <span><a href="#">Terms & Conditions</a></span></p>
-              <a href="#" className="backtotop"><span className="ti-arrow-circle-up"></span>Back To Top</a>
+              <a href="#" className="backtotop">Back To Top <span className="ti-arrow-circle-up"></span></a>
             </div>
           </div>
         </div>

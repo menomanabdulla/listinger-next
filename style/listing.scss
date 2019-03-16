@@ -435,6 +435,36 @@
 	}
 }
 
+//listing-details
+.listing-details-photo-upload{
+	.ant-upload-select-picture-card i {
+		font-size: 32px;
+		color: #999;
+	}
+	  
+	.ant-upload-select-picture-card .ant-upload-text {
+		margin-top: 8px;
+		color: #666;
+	}
+	.ant-upload-list-picture .ant-upload-list-item-error,
+	.ant-upload-list-picture-card .ant-upload-list-item-error {
+		border-color: #d9d9d9;
+	}
+	.ant-upload-list-picture .ant-upload-list-item,
+	.ant-upload-list-picture-card .ant-upload-list-item{
+		border-style: dashed;
+	}
+}
+.rating{
+	>span>span{
+		margin: 0 9px 0 0;
+	}
+	span.fa{
+		font-size: 14px;
+		color: $color-red;
+	}
+}
+
 .listing-details-page-header {
 	padding: 150px 0 20px;
 }
@@ -579,7 +609,6 @@
 	margin-top: 20px;
 	a {
 		padding-right: 35px;
-		padding-left: 35px;
 		display: inline-block;
 		font-size: 16px;
 		font-weight: 500;

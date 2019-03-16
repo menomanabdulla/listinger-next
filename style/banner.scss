@@ -371,7 +371,7 @@ ul.lg-categorie {
             margin-right: 15px;
             margin-bottom: 15px;
             .entry-content {
-                padding: 0;
+				padding: 12px 0;
             }
             &.lastitem {
                 &::after {
@@ -380,6 +380,11 @@ ul.lg-categorie {
             }
         }
     }
+}
+.lg-categorie.style-two{
+	li .entry-content .entry-icon{
+		font-size: 30px;
+	}
 }
 
 /* medi all 1600 removed */

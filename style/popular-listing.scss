@@ -10,7 +10,6 @@
 .popular-listing-block {
     .listging-tab-nav-2.nav-pills {
         justify-content: flex-end;
-
         .nav-item {
             border-bottom: 2px solid $color-gray2;
 
@@ -25,6 +24,9 @@
             &:before {
                 bottom: -2px;
             }
+        }
+        a{
+            padding-left: 35px;
         }
     }
 }

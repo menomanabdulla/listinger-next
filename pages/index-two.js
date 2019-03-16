@@ -41,22 +41,6 @@ class Home extends Component{
                       <a href="#"></a>
                       <div className="entry-content">
                         <div className="entry-icon">
-                          <i className="la la-female"></i> </div>
-                        <h4 className="entry-cat">Beauty &amp; Spa</h4>
-                      </div>
-                    </li>
-                    <li className="categorie-green">
-                      <a href="#"></a>
-                      <div className="entry-content">
-                        <div className="entry-icon">
-                          <i className="la la-bed"></i> </div>
-                        <h4 className="entry-cat">Hotel</h4>
-                      </div>
-                    </li>
-                    <li className="categorie-conifer">
-                      <a href="#"></a>
-                      <div className="entry-content">
-                        <div className="entry-icon">
                           <i className="la la-cutlery"></i> </div>
                         <h4 className="entry-cat">Restaurant</h4>
                       </div>
@@ -69,12 +53,28 @@ class Home extends Component{
                         <h4 className="entry-cat">Cafe &amp; Bar</h4>
                       </div>
                     </li>
-                    <li className="categorie-darkgreen lastitem">
+                    <li className="categorie-green">
+                      <a href="#"></a>
+                      <div className="entry-content">
+                        <div className="entry-icon">
+                          <i className="la la-bed"></i> </div>
+                        <h4 className="entry-cat">Hotel</h4>
+                      </div>
+                    </li>
+                    <li className="categorie-darkgreen">
                       <a href="#"></a>
                       <div className="entry-content">
                         <div className="entry-icon">
                           <i className="la la-shopping-cart"></i> </div>
                         <h4 className="entry-cat">Shopping</h4>
+                      </div>
+                    </li>
+                    <li className="categorie-conifer lastitem">
+                      <a href="#"></a>
+                      <div className="entry-content">
+                        <div className="entry-icon">
+                          <i className="la la-female"></i> </div>
+                        <h4 className="entry-cat">Beauty &amp; Spa</h4>
                       </div>
                     </li>
                   </ul>

@@ -49,17 +49,17 @@ const BlogList = () =>(
                   <div className="col-lg-10">
                     <div className="post-content">
                       <div className="post-thumb">
-                        <a href="#"><img src="/static/images/blog/img-7.jpg" className="img-fluid" alt=""/></a>
+                        <a href="/blogdetails"><img src="/static/images/blog/img-7.jpg" className="img-fluid" alt=""/></a>
                       </div>
                       <div className="post-body">
-                        <h3><a href="#">There are many variations of passages</a></h3>
+                        <h3><a href="/blogdetails">There are many variations of passages</a></h3>
                         <div className="post-meta">
                           <span className="date">24 Aug, 19</span>
                           <span className="author"><a href="#"><i className="la la-user"></i>David Chandler</a></span>
                           <span className="author"><a href="#"><i className="la la-comments"></i>42 Comments</a></span>
                         </div>
                         <p>It is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who</p>
-                        <a href="#" className="lg-button">Read More</a>
+                        <a href="/blogdetails" className="lg-button">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -77,17 +77,17 @@ const BlogList = () =>(
                   <div className="col-lg-10">
                     <div className="post-content">
                       <div className="post-thumb">
-                        <a href="#"><img src="/static/images/blog/img-8.jpg" className="img-fluid" alt=""/></a>
+                        <a href="/blogdetails"><img src="/static/images/blog/img-8.jpg" className="img-fluid" alt=""/></a>
                       </div>
                       <div className="post-body">
-                        <h3><a href="#">But who has any right to find  fault with a man who</a></h3>
+                        <h3><a href="/blogdetails">But who has any right to find  fault with a man who</a></h3>
                         <div className="post-meta">
                           <span className="date">24 Aug, 19</span>
                           <span className="author"><a href="#"><i className="la la-user"></i>David Chandler</a></span>
                           <span className="author"><a href="#"><i className="la la-comments"></i>42 Comments</a></span>
                         </div>
                         <p>It is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who</p>
-                        <a href="#" className="lg-button">Read More</a>
+                        <a href="/blogdetails" className="lg-button">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -105,17 +105,17 @@ const BlogList = () =>(
                   <div className="col-lg-10">
                     <div className="post-content">
                       <div className="post-thumb">
-                        <a href="#"><img src="/static/images/blog/img-9.jpg" className="img-fluid" alt=""/></a>
+                        <a href="/blogdetails"><img src="/static/images/blog/img-9.jpg" className="img-fluid" alt=""/></a>
                       </div>
                       <div className="post-body">
-                        <h3><a href="#">Nor again is there anyone who loves or pursues </a></h3>
+                        <h3><a href="/blogdetails">Nor again is there anyone who loves or pursues </a></h3>
                         <div className="post-meta">
                           <span className="date">20 Aug, 19</span>
                           <span className="author"><a href="#"><i className="la la-user"></i>David Chandler</a></span>
                           <span className="author"><a href="#"><i className="la la-comments"></i>42 Comments</a></span>
                         </div>
                         <p>It is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who</p>
-                        <a href="#" className="lg-button">Read More</a>
+                        <a href="/blogdetails" className="lg-button">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -133,17 +133,17 @@ const BlogList = () =>(
                   <div className="col-lg-10">
                     <div className="post-content">
                       <div className="post-thumb">
-                        <a href="#"><img src="/static/images/blog/img-10.jpg" className="img-fluid" alt=""/></a>
+                        <a href="/blogdetails"><img src="/static/images/blog/img-10.jpg" className="img-fluid" alt=""/></a>
                       </div>
                       <div className="post-body">
-                        <h3><a href="#">Which toil and pain can procure him some great</a></h3>
+                        <h3><a href="/blogdetails">Which toil and pain can procure him some great</a></h3>
                         <div className="post-meta">
                           <span className="date">24 Aug, 19</span>
                           <span className="author"><a href="#"><i className="la la-user"></i>David Chandler</a></span>
                           <span className="author"><a href="#"><i className="la la-comments"></i>42 Comments</a></span>
                         </div>
                         <p>It is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who</p>
-                        <a href="#" className="lg-button">Read More</a>
+                        <a href="/blogdetails" className="lg-button">Read More</a>
                       </div>
                     </div>
                   </div>
@@ -161,17 +161,17 @@ const BlogList = () =>(
                   <div className="col-lg-10">
                     <div className="post-content">
                       <div className="post-thumb">
-                        <a href="#"><img src="/static/images/blog/img-11.jpg" className="img-fluid" alt=""/></a>
+                        <a href="/blogdetails"><img src="/static/images/blog/img-11.jpg" className="img-fluid" alt=""/></a>
                       </div>
                       <div className="post-body">
-                        <h3><a href="#">There are many variations of passages</a></h3>
+                        <h3><a href="/blogdetails">There are many variations of passages</a></h3>
                         <div className="post-meta">
                           <span className="date">10 Aug, 19</span>
                           <span className="author"><a href="#"><i className="la la-user"></i>David Chandler</a></span>
                           <span className="author"><a href="#"><i className="la la-comments"></i>42 Comments</a></span>
                         </div>
                         <p>It is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who</p>
-                        <a href="#" className="lg-button">Read More</a>
+                        <a href="/blogdetails" className="lg-button">Read More</a>
                       </div>
                     </div>
                   </div>

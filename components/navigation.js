@@ -92,7 +92,7 @@ class NavbarOne extends Component {
                             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                             <div className="nav-item-static">
                                 <Nav.Link href="/">
-                                    <i className="la la-user"></i>Login & Register
+                                    <i className="la la-user"></i>Login <span>or</span> Register
                                 </Nav.Link>
                                 <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
@@ -143,7 +143,7 @@ class NavbarOne extends Component {
                             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                             <div className="nav-item-static">
                                 <Nav.Link href="/">
-                                    <i className="la la-user"></i>Login & Register
+                                    <i className="la la-user"></i>Login <span>or</span> Register
                                 </Nav.Link>
                                 <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
@@ -185,7 +185,7 @@ class NavbarOne extends Component {
                         <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                         <div className="nav-item-static">
                             <Nav.Link href="/">
-                                <i className="la la-user"></i>Login & Register
+                                <i className="la la-user"></i>Login <span>or</span> Register
                             </Nav.Link>
                             <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                 <i className="fa fa-plus"></i>

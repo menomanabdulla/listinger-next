@@ -33,8 +33,13 @@
         top: 95%;
     }
     .nav-item-static{
-        >a i.la{
-            margin-right: 10px;
+        >a {
+            i.la{
+                margin-right: 10px;
+            }
+            span{
+                margin: 0 15px;
+            }
         }
     }
 }
@@ -43,7 +48,7 @@
     .main-navbar{
         position: fixed;
         top: 0;
-        left: 15%;
+        left: 12%;
         width: 100%;
         background: $color-white;
         border-bottom: 1px solid $color-gray;
@@ -76,7 +81,7 @@
             background: rgba(0,0,0,0.1);
         }
         .navbar-brand{
-            margin-right: 10%;
+            margin-right: 16%;
         }
         transition:   all 0.3s ease-in;
         -webkit-transition:   all 0.3s ease-in;
@@ -94,14 +99,11 @@
             flex-grow: 0;
         }
     }
-
-
-
 }
 .header-form-one{
     width: 550px;
+    margin-left: 20px;
     .form-group{
-        
         padding: 4px 10px;
         background: rgba(255,255,255,0.08);
         width: 84%;
@@ -115,7 +117,7 @@
             background: transparent;
             border: none;
             color: $color-white;
-            padding: 0 .75rem;
+            padding: 0 .75rem 2px .75rem;
             &:focus{
                 outline: none;
                 box-shadow: none;
@@ -130,12 +132,12 @@
             width: 55%;
             &:before{
                 content: '';
-                height: 40px;
+                height: 25px;
                 width: 1px;
                 position: absolute;
                 right: 0;
-                top: 0;
-                background: rgba(255,255,255,0.5);
+                top: 6px;
+                background: rgba(255, 255, 255, 0.2);
             }
         }
         .location-field-block{
@@ -181,11 +183,16 @@
 .main-navbar{
     .navbar-nav{
         align-items: center;
+        .dropdown.nav-item{
+            .nav-link{
+                padding: 0 26px 0 20px;
+            }
+        }
         .nav-link{
             position: relative;
             color: $color-white;
             font-size: 14px;
-            padding: 0 25px;
+            padding: 0 20px;
             &:hover,&:focus,&:active{
                 outline: none;
                 box-shadow: none;
@@ -375,8 +382,9 @@
 //search-form-two
 .header-search-container{
     position: relative;
-    flex: 0 0 42%;
-    padding-left: 100px;
+    flex: 0 0 auto;
+    margin-left: 30px;
+    margin-right: auto;
     span{
         color: $color-white;
         font-size: 14px;
@@ -385,15 +393,11 @@
         }
     }
     &:hover{
-        .browse-listing{
-            visibility: visible;
-            opacity: 1;
-            //-webkit-transform: rotateX(0);
-            //-moz-transform: rotateX(0);
-            //-ms-transform: rotateX(0);
-            //transform: rotateX(0);
+            .browse-listing{
+                visibility: visible;
+                opacity: 1;
+            }
         }
-    }
 }
 .browse-listing {
     width: 470px;
@@ -408,46 +412,69 @@
     display: block;
     visibility: hidden;
     opacity: 0;
-    //-webkit-transform: rotateX(90deg);
-    //-moz-transform: rotateX(90deg);
-    //-ms-transform: rotateX(90deg);
-    //transform: rotateX(90deg);
-    //-webkit-transform-origin: top;
-    //-moz-transform-origin: top;
-    //-ms-transform-origin: top;
-    //transform-origin: top;
-    //-o-transition: 0.3s;
-    //transition: 0.3s;
-    //-ms-transition: 0.3s;
-    //-moz-transition: 0.3s;
-    //-webkit-transition: 0.3s;
     .navbar-mulitsearch {
         margin-bottom: 25px;
+        input{
+            padding: 1rem 0rem;
+            border: 0;
+            width: 100%;
+            font-size: 14px;
+            &:focus ~ label{
+                font-size: 12px; 
+                top: -8px;
+            }
+            &:focus ~ span{
+                width: 100%;
+                -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
+                -o-transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
+                transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
+            }
+        }
+        .form-control {
+            border-bottom: 1px solid $color-gray2;
+            &:focus,
+            &:active{
+                box-shadow: none;
+                outline: none;
+                border-color: #e5e5e5;
+            }
+        }
     }
-    .styled-input label {
-        padding: 0;
-        color: $color-secondary;
+    .styled-input {
+        position: relative;
+        label {
+            font-weight: 400;
+            font-size: 14px;
+            padding: 0;
+            color: #757580;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+            -o-transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+            transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1);
+            pointer-events: none;
+        }
     }
     
     input ~ span {
         background: red;
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
+        -o-transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
+        transition: all 0.5s cubic-bezier(0.2, 0, 0.03, 1);
     }
-    .form-control {
-        border-bottom: 1px solid $color-gray2;
-        &:focus,
-        &:active{
-            box-shadow: none;
-            outline: none;
-            border-color: #e5e5e5;
-        }
-    }
-    .slimScrollDiv {
-        height: 175px !important;
-    }
+
+    
     button.searchsubmit {
         position: absolute;
         right: 5px;
-        top: 7px;
+        top: 0;
         font-size: 14px;
         background: transparent;
         color: $color-red;
@@ -510,3 +537,13 @@
         display: none;
     }
 } 
+@media screen and (min-width: 1800px){
+    .navigation-two-wrap{
+        .main-navbar{
+            left: 17%;
+            .navbar-brand{
+                margin-right: 14%;
+            }
+        }
+    }
+}

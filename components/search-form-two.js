@@ -6,9 +6,10 @@ const SearchFormTwo = () =>(
         <div className="col-12">
             <form className="navbar-mulitsearch" action="#" method="GET">
                 <input type="hidden" name="search" value="listing" />
-                <div className="styled-input">            
+                <div className="styled-input no-arrow">            
                     <input id="header_category_search" name="keyword" className="form-control" type="text" required="" />
                     <label>What are you looking for ?</label>
+                    <span></span>
                     <button className="searchsubmit" type="submit"><i className="fa fa-search" aria-hidden="true"></i></button>
                 </div>        
 

@@ -46,23 +46,7 @@ class Home extends Component{
             </div>
             <ul className="lg-categorie">
               <li className="categorie-red">
-                <a href="#"></a>
-                <div className="entry-content">
-                  <div className="entry-icon">
-                    <i className="la la-female"></i> </div>
-                  <h4 className="entry-cat">Beauty &amp; Spa</h4>
-                </div>
-              </li>
-              <li className="categorie-green">
-                <a href="#"></a>
-                <div className="entry-content">
-                  <div className="entry-icon">
-                    <i className="la la-bed"></i> </div>
-                  <h4 className="entry-cat">Hotel</h4>
-                </div>
-              </li>
-              <li className="categorie-conifer">
-                <a href="#"></a>
+                <a href="/listing"></a>
                 <div className="entry-content">
                   <div className="entry-icon">
                     <i className="la la-cutlery"></i> </div>
@@ -70,24 +54,39 @@ class Home extends Component{
                 </div>
               </li>
               <li className="categorie-orange">
-                <a href="#"></a>
+                <a href="/listing"></a>
                 <div className="entry-content">
                   <div className="entry-icon">
                     <i className="la la-beer"></i> </div>
                   <h4 className="entry-cat">Cafe &amp; Bar</h4>
                 </div>
               </li>
-              <li className="categorie-darkgreen lastitem">
-                <a href="#"></a>
+              <li className="categorie-conifer">
+                <a href="/listing"></a>
+                <div className="entry-content">
+                  <div className="entry-icon">
+                    <i className="la la-bed"></i> </div>
+                  <h4 className="entry-cat">Hotel</h4>
+                </div>
+              </li>
+              <li className="categorie-darkgreen">
+                <a href="/listing"></a>
                 <div className="entry-content">
                   <div className="entry-icon">
                     <i className="la la-shopping-cart"></i> </div>
                   <h4 className="entry-cat">Shopping</h4>
                 </div>
               </li>
+              <li className="categorie-green lastitem">
+                <a href="/listing"></a>
+                <div className="entry-content">
+                  <div className="entry-icon">
+                    <i className="la la-female"></i> </div>
+                  <h4 className="entry-cat">Beauty &amp; Spa</h4>
+                </div>
+              </li>
             </ul>
             <form className="lg-mulitsearch" action="#" method="GET">
-              className
               <div className="row">
                 <div className="col-md col-12">
                   <input type="hidden" name="search" value="listing" />

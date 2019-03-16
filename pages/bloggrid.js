@@ -10,7 +10,7 @@ import '../style/blog.scss';
 import '../style/call-to-action.scss';
 const BlogGrid = () =>(
     <div>
-        <Head title="Dashboard | Invoice"/>
+        <Head title="News Grid | Listing"/>
         <Navigation
             imgSrc = {'/static/images/logo.png'}
             containerCls = {'static'}
@@ -38,7 +38,7 @@ const BlogGrid = () =>(
             <div className="row">
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-1.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -48,7 +48,7 @@ const BlogGrid = () =>(
                         <span>Aug</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">There are many variations of passages</a></h3>
+                        <h3><a href="/blogdetails">There are many variations of passages</a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>
@@ -61,7 +61,7 @@ const BlogGrid = () =>(
             </div>
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-2.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -71,7 +71,7 @@ const BlogGrid = () =>(
                         <span>Aug</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">But who has any right to find fault with a man who</a></h3>
+                        <h3><a href="/blogdetails">But who has any right to find fault with a man who</a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>
@@ -84,7 +84,7 @@ const BlogGrid = () =>(
             </div>
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-4.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -94,7 +94,7 @@ const BlogGrid = () =>(
                         <span>Feb</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">Nor again is there anyone who loves or pursues </a></h3>
+                        <h3><a href="/blogdetails">Nor again is there anyone who loves or pursues </a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>
@@ -107,7 +107,7 @@ const BlogGrid = () =>(
             </div>
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-3.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -117,7 +117,7 @@ const BlogGrid = () =>(
                         <span>Mar</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">There are many variations of passages</a></h3>
+                        <h3><a href="/blogdetails">There are many variations of passages</a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>
@@ -130,7 +130,7 @@ const BlogGrid = () =>(
             </div>
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-5.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -140,7 +140,7 @@ const BlogGrid = () =>(
                         <span>Feb</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">There are many variations of passages</a></h3>
+                        <h3><a href="/blogdetails">There are many variations of passages</a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>
@@ -153,7 +153,7 @@ const BlogGrid = () =>(
             </div>
             <div className="col-lg-4 col-md-6">
                 <div className="lg-post-grid">
-                <a href="#" className="post-thumb">
+                <a href="/blogdetails" className="post-thumb">
                     <img src="/static/images/blog/img-6.jpg" className="img-fluid" alt="" />
                 </a>
                 <div className="post-body">
@@ -163,7 +163,7 @@ const BlogGrid = () =>(
                         <span>Jun</span>
                     </div>
                     <div className="content">
-                        <h3><a href="#">Nor again is there anyone who loves or pursues </a></h3>
+                        <h3><a href="/blogdetails">Nor again is there anyone who loves or pursues </a></h3>
                         <p>Combined with a handful of model sentence structures, to generate lorem Ipsum which looks</p>
                     </div>
                     </div>

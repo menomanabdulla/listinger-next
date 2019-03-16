@@ -57,7 +57,7 @@ p {
 a {
   font-family: $basefont;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 26px;
   color: $color-primary;
 }
@@ -79,6 +79,9 @@ a {
 .padding-tb120 {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.padding-top-100{
+    padding-top: 100px;
 }
 .bg-gray {
     background: #f9f9f9;
@@ -234,7 +237,9 @@ button:focus {
 .padding-bottom-70 {
     padding-bottom: 70px;
 }
-
+.padding-bottom-40 {
+    padding-bottom: 40px;
+}
 .padding-bottom-100 {
     padding-bottom: 100px;
 }

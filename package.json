@@ -29,6 +29,7 @@
     "react-chartjs-2": "^2.7.4",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.7.0",
+    "react-rating": "^1.6.2",
     "react-redux": "^6.0.0",
     "react-scrollspy": "^3.4.0",
     "react-slick": "^0.23.2",

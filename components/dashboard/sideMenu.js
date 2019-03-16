@@ -75,22 +75,13 @@ class SideBar extends React.Component {
                     </a>
                 </Link>
             </Menu.Item>
-            <SubMenu  className="navigation-item dropdown"  key="sub2" title={<p><i className="la la-envelope"></i><span>Messages</span></p>}>
-                <Menu.Item key="7">
-                    <Link href='/message'>
-                        <a>
-                            All Messages
-                        </a>
-                    </Link>
-                </Menu.Item>
-                <Menu.Item key="8">
-                    <Link href='/message'>
-                        <a>
-                            Unread Messages
-                        </a>
-                    </Link>
-                </Menu.Item>
-            </SubMenu>
+            <Menu.Item key="6" className="navigation-item">
+                <Link href='/message'>
+                    <a>
+                    <i className="la la-envelope"></i>Messages
+                    </a>
+                </Link>
+            </Menu.Item>
             <Menu.Item key="9" className="navigation-item">
                 <Link href='/claim'>
                     <a>

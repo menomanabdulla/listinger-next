@@ -15,7 +15,7 @@ export default [
         location: 'New York City',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/01.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -39,7 +39,7 @@ export default [
         location: 'San Francisco',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/02.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -63,7 +63,7 @@ export default [
         location: 'Los Angeles',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/03.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -87,7 +87,7 @@ export default [
         location: 'New York City',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/01.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -111,7 +111,7 @@ export default [
         location: 'Chicago',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/05.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -135,7 +135,7 @@ export default [
         location: 'Washington, D.C.',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/06.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -159,7 +159,7 @@ export default [
         location: ' New Orleans',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/07.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
@@ -183,7 +183,7 @@ export default [
         location: 'San Francisco',
         phone: '+2 445-977-3002',
         authorThumb: './static/images/listing/author/08.jpg',
-        description: 'Moreml insta dolor sit amet, consectetur adipicing..',
+        description: 'Moreml insta dolor sit amet, consectetur..',
         detailsDesc: `If you are going to use a passage of Lorem Ipsum, you need to be sure there 
                     isn \'t anything embarrassing hidden in the middle of text. 
                     All the Lorem Ipsum generators on the Internet tend to repeat.
