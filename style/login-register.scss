@@ -1,0 +1,215 @@
+/*
+|----------------------------------------------------------------------------
+| Login-register Style
+|----------------------------------------------------------------------------
+*/
+
+@import './partial/variables';
+@import './partial/mixins';
+
+.login-register-modal{
+    z-index: 999999999;
+}
+.lg-account-modal {
+	.modal-header {
+		padding: 18px 35px;
+	    box-shadow: 0px 5px 5px 0px rgba($color-black, 0.05);
+		h5 {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 500;
+			color: $color-primary;
+			i {
+				color: $color-gray3;
+				margin-right: 8px;
+			}
+		}
+		.close {
+			font-size: 18px;
+			color: $color-gray3;
+			&:hover {
+				color: $color-gray3;
+			}
+		}
+	}
+	.modal-body {
+		padding: 30px 40px 60px;
+		form {
+			.form-group {
+				position:relative;
+				margin-bottom: 25px;
+				.form-control {
+					height: 50px;
+					border: 0;
+					border-bottom: 1px solid rgba($color-black, .1);
+					padding: 0;
+					border-radius: 0;
+					outline: none;
+					box-shadow: none;
+					&:focus {
+						border-color: $color-red;
+						outline: none;
+					}
+				}
+				textarea.form-control {
+					padding: 16px 0;
+				}
+				.animate-label {
+				  color: $color-secondary; 
+				  font-size: 14px;
+				  font-weight: normal;
+				  position: absolute;
+				  pointer-events: none;
+				  margin-bottom: 0;
+				  left: 0;
+				  top: 15px;
+				  transition: 0.3s ease all; 
+				}
+				.form-control:valid ~ .animate-label {
+				  top:-11px;
+				  font-size:12px;
+				}
+				.form-control:focus ~ .animate-label {
+				  top:-11px;
+				  font-size:12px;
+				}
+				&.form-check {
+					label {
+						a {
+							text-decoration: underline;
+							color: $color-secondary;
+							transition: all .3s ease;
+							&:hover {
+								color: $color-red;
+							}
+						}
+					}
+				}
+			}
+			.form-check {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+                flex-wrap: wrap;
+                padding-left: 0;
+				div {
+					margin-right: 20px;
+				}
+				.forget-pass {
+					color: $color-secondary;
+					font-size: 14px;
+					font-weight: 400;
+				}
+			}
+			.form-check.register-form{
+				display: block;
+				input{
+					margin-right: 5px;
+				}
+			}
+			.btn {
+				height: 60px;
+				width: 100%;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 500;
+				color: $color-white;
+				background: $color-red;
+                text-transform: uppercase;
+                @include transition(all, .3s, ease);
+                &:hover {
+                    background: $color-red2;
+                }
+			}
+		}
+		.thirdparty-login {
+			margin-top: 30px;
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: $color-gray3;
+				display: block;
+				margin-bottom: 15px;
+			}
+			.buttons {
+				display: flex;
+				justify-content: space-between;
+				a {
+					border: 1px solid rgba($color-black, .1);
+					border-radius: 3px;
+					padding: 14px 25px;
+					text-decoration: none;
+					display: inline-block;
+					color: $color-secondary;
+					transition: all .3s ease;
+					font-weight: 500;
+					&:hover {
+						&.facebook {
+							color: #3b5998;	
+						}
+						&.twitter {
+							color: #1da1f2;	
+						}
+						&.google {
+							color: #ea4335;	
+						}
+					}
+					i {
+						margin-right: 8px;
+					}
+					&.facebook {
+						i {
+							color: #3b5998;	
+						}
+					}
+					&.twitter {
+						i {
+							color: #1da1f2;	
+						}
+					}
+					&.google {
+						i {
+							color: #ea4335;	
+						}
+					}
+				}
+			}
+		}
+		.anotherOption {
+            font-family: $basefont;
+            font-size: 14px;
+            font-weight: 400;
+			color: $color-secondary;
+			margin-top: 20px;
+			margin-bottom: 0;
+			a {
+                font-family: $basefont;
+                font-size: 14px;
+				color: $color-secondary;
+				font-weight: 500;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 575px) {
+	.lg-account-modal {
+		.modal-body {
+			.thirdparty-login {
+				.buttons {
+					display: block;
+					a {
+						padding: 14px 30px;
+						margin-right: 10px;
+						margin-bottom: 10px;
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

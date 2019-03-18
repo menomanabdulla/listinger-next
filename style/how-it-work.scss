@@ -1,0 +1,51 @@
+
+/*------------------------------------------------------
+	How-it-work Style
+------------------------------------------------------*/
+@import './partial/variables';
+@import './partial/mixins';
+
+.padding-bottom-110 {
+    padding-bottom: 110px;
+}
+
+.working-process-box {
+	span {
+		font-size: 18px;
+		font-family: $basefont;
+		font-weight: 400;
+		color: $color-red;
+		margin-bottom: 15px;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+	h3 {
+		font-size: 30px;
+		color: $color-primary;
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+	p {
+		font-size: 14px;
+		color: $color-secondary;
+	}
+	.button {
+		margin-top: 25px;
+		padding: 12px 30px;
+		font-size: 14px;
+		font-family: $basefont;
+		font-weight: 500;
+		background: $color-red;
+		color: $color-white;
+		border-radius: 3px;
+		display: inline-block;
+		text-decoration: none;
+	}
+}
+
+
+@media all and (max-width: 991px) {
+	.right-content-md {
+		margin-top: 30px;
+	}
+}

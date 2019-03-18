@@ -113,13 +113,15 @@
     .entry-content {
         border: 1px solid $color-gray2;
         border-top: 0;
-        // padding-top: 12px;
         padding-left: 25px;
         padding-right: 25px;
         padding-bottom: 20px;
         background: $color-white;
         border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		.entry-title{
+			margin-bottom: 4px;
+		}
         .meta-block {
         	display: flex;
         	align-items: center;
@@ -218,7 +220,7 @@
         }
         p {
             color: $color-secondary;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         .meta-cat {
             margin-bottom: 30px;
@@ -413,7 +415,7 @@
     	}
     }
     p {
-    	margin-bottom: 15px;
+    	margin-bottom: 20px;
     }
 	}
 }
@@ -927,15 +929,20 @@
 		justify-content: space-between;
 		text-align: center;
 		border-top: 1px solid rgba($color-black, .08);
-		a {
+		.btn-review {
 			flex-grow: 1;
 			text-decoration: none;
-			color: $color-primary;
+			color: $color-primary!important;
 			padding: 17px 10px;
 			transition: all .3s ease;
+			background: transparent!important;
 			border-right: 1px solid rgba($color-black, .08);
-			&:hover {
-				color: $color-red;
+			&:focus,
+			&:hover,
+			&:active:focus {
+				color: $color-red!important;
+				outline: none;
+				box-shadow: none;
 			}
 			&:last-child {
 				border-right: 0;
@@ -1397,6 +1404,7 @@
 			}
 			textarea.form-control {
 				height: 100px;
+				padding: 10px 0 0 0;
 			}
 			.btn {
 				background: $color-red;
@@ -1506,19 +1514,25 @@
 				margin-left: auto;
 				margin-right: auto;
 				margin-bottom: 5px;
-				border-radius: 50%;	
+				border-radius: 50%;
 				-webkit-border-radius: 50%;
 				-moz-border-radius: 50%;
 				-ms-border-radius: 50%;
 				-o-border-radius: 50%;
+				transition: all 0.3s ease-in;
+				-webkit-transition: all 0.3s ease-in;
+				-moz-transition: all 0.3s ease-in;
+				-ms-transition: all 0.3s ease-in;
+				-o-transition: all 0.3s ease-in;
 			}
 			i.la-cutlery{
-				background: $color-red;
-				color: $color-white;
+				background: rgba(249,60,100,0.3);
+				color: $color-red;
 			}
 			i.la-beer{
 				background: rgba(251,197,49,0.3);
 				color: $color-yellow;
+				
 			}
 			i.la-female{
 				background: rgba(76,209,55,0.3);
@@ -1527,6 +1541,24 @@
 			i.la-hotel{
 				background: rgba(186,220,88,0.3);
 				color: $color-yellowgreen;
+			}
+			&:hover{
+				i.la-hotel{
+					background: $color-yellowgreen;
+					color: $color-white;
+				}
+				i.la-female{
+					background: $color-green;
+					color: $color-white;
+				}
+				i.la-beer{
+					background: $color-yellow;
+					color: $color-white;
+				}
+				i.la-cutlery{
+					background: $color-red;
+					color: $color-white;
+				}
 			}
 		}
 	}
@@ -1825,14 +1857,15 @@
 	.entry-content{
 		position: relative;
 		padding-top: 10px;
-		p{
-			margin-bottom: 0;
-		}
 		border-radius: 0;
 		-webkit-border-radius: 0;
 		-moz-border-radius: 0;
 		-ms-border-radius: 0;
 		-o-border-radius: 0;
+		
+		p{
+			margin-right: 30px;
+		}
 	}
 	.lg-listing-single{
 		margin-bottom: 0;
@@ -1846,9 +1879,6 @@
 		-ms-border-radius: 0 0 0 15px;
 		-o-border-radius: 0 0 0 15px;
 	}
-}
-.listing-detils-desc-block{
-	padding-bottom: 30px;
 }
 .modal-content{
 	border-radius: 10px;

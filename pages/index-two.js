@@ -6,6 +6,7 @@ import store from '../components/store';
 import Testimonial from '../components/testimonial';
 import ListingGrid from '../components/listing/listing-grid';
 import ListingMap from '../components/listing/listing-map';
+import FullWidthMap from '../components/full-width-map';
 import Partner from '../components/partner';
 import Footer from '../components/footer';
 import Navigation from '../components/navigation';
@@ -275,32 +276,8 @@ class Home extends Component{
           </div>
       </div>
       <div className="listing-full-width-map">
-        <div className="absolute-container">
-            <div className="city-listing-block">
-              <div className="title">
-                <h4>In Your City</h4>
-              </div>
-              <ul>
-                <li>
-                  <i className="la la-cutlery"></i>
-                  <h5>Restaurants</h5>
-                </li>
-                <li>
-                  <i className="la la-beer"></i>
-                  <h5>Cafe & Bar</h5>
-                </li>
-                <li>
-                  <i className="la la-female"></i>
-                  <h5>Spa & Beauty</h5>
-                </li>
-                <li>
-                  <i className="la la-hotel"></i>
-                  <h5>Hotel</h5>
-                </li>
-              </ul>
-            </div>
-        </div>
           <Provider store = { store }>
+            <FullWidthMap />
             <ListingMap />
           </Provider>
       </div>

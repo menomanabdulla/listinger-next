@@ -5,7 +5,8 @@ export default [
             lng: -122.437777 
         },
         thumb: './static/images/listing/01.jpg',
-        ratting: '8.6',
+        ratting: '4.5',
+        rattingCount: '3',
         title: 'Xionny Drinks Side',
         type: 'Cafe & Bar',
         typeSign: 'la-beer',
@@ -29,7 +30,8 @@ export default [
             lng: -122.423837 
         },
         thumb: './static/images/listing/02.jpg',
-        ratting: '7.5',
+        ratting: '5.0',
+        rattingCount: '5',
         title: 'The Hogi Restaurant',
         type: 'Restaurants',
         typeSign: 'la-cutlery',
@@ -54,6 +56,7 @@ export default [
         },
         thumb: './static/images/listing/03.jpg',
         ratting: '4.9',
+        rattingCount: '4',
         title: 'Triangle Place',
         type: 'Hotel',
         typeSign: 'la-hotel',
@@ -77,7 +80,8 @@ export default [
             lng: -122.433176 
         },
         thumb: './static/images/listing/04.jpg',
-        ratting: '8.6',
+        ratting: '3.8',
+        rattingCount: '2',
         title: 'Riverview Spa Care',
         type: 'Spa & Beauty',
         typeSign: 'la-female',
@@ -101,7 +105,8 @@ export default [
             lng: -122.423777 
         },
         thumb: './static/images/listing/05.jpg',
-        ratting: '9.2',
+        ratting: '4.2',
+        rattingCount: '7',
         title: 'Wide Awake Cafe',
         type: 'Cafe & Bar',
         typeSign: 'la-beer',
@@ -125,7 +130,8 @@ export default [
             lng: -122.417777 
         },
         thumb: './static/images/listing/06.jpg',
-        ratting: '8.6',
+        ratting: '3.9',
+        rattingCount: '6',
         title: 'Oreo Super Shop',
         type: 'Shopping',
         typeSign: 'la-shopping-cart',
@@ -149,7 +155,8 @@ export default [
             lng: -122.447777 
         },
         thumb: './static/images/listing/07.jpg',
-        ratting: '6.2',
+        ratting: '4.8',
+        rattingCount: '1',
         title: 'The Side View Cafe',
         type: 'Cafe & Bar',
         typeSign: 'la-beer',
@@ -173,7 +180,8 @@ export default [
             lng: -122.418391 
         },
         thumb: './static/images/listing/08.jpg',
-        ratting: '8.8',
+        ratting: '3.7',
+        rattingCount: '5',
         title: 'The Core Restaurant',
         type: 'Restaurants',
         typeSign: 'la-cutlery',

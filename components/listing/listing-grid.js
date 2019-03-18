@@ -28,7 +28,6 @@ class ListingGrid extends Component{
                     {
                     this.props.listing.filterListing.slice(0, 6).map(( item, index ) => {
                         return (
-                            /* remon */
                             <div className="col-lg-4 col-md-6" key = { index }>
                                 <div className="lg-listing-single">
                                     <div className="entry-thumb">
@@ -44,7 +43,7 @@ class ListingGrid extends Component{
                                                     <li><span>$</span></li>
                                                 </ul>
                                             </div>      
-                                            <span>{item.ratting}</span>(5)  
+                                            <span>{item.ratting}</span>({item.rattingCount})  
                                         </div>
                                     </div>
                                     <div className="entry-content">
@@ -79,7 +78,7 @@ class ListingGrid extends Component{
                                             </ul>
                                         </div>
                                         <h6 className={`entry-title ${item.availability}`}>
-                                            <a href="#">{item.title}</a>  
+                                            <a href="/listing-details">{item.title}</a>
                                         </h6>
                                         <p>{item.description}</p>
                                         <div className="meta-cat">

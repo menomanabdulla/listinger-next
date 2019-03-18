@@ -4,6 +4,9 @@ import Lightbox from 'lightbox-react';
 import Video from './video';
 import ProgressBar from '../progressbar/index'
 import { Collapse } from 'antd';
+import { Modal, Button } from 'react-bootstrap';
+import Rating from 'react-rating';
+import { Upload, Icon } from 'antd';
 
 import 'antd/dist/antd.css';
 import 'lightbox-react/style.css'; 
@@ -13,18 +16,57 @@ const images = [
     Video
 ];
 
-
 class Overview extends Component{
     constructor(props) {
         super(props);
-    
         this.state = {
           photoIndex: 0,
           isOpen: false,
+          show: false,
+          value: 0,
+          previewVisible: false,
+          previewImage: '',
+          fileList: [{
+            uid: '-1',
+            name: 'xxx.png',
+            status: 'done',
+            url: 'https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png'
+          }]
         };
+        this.handleShow = this.handleShow.bind(this);
+        this.handleClose = this.handleClose.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+        this.handleCancel = this.handleCancel.bind(this);
+        this.handlePreview = this.handlePreview.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
+    handleClose() {
+        this.setState({ show: false });
+    }
+
+    handleShow() {
+    this.setState({ show: true });
+    }
+    handleCancel = () => this.setState({ previewVisible: false })
+    handlePreview = (file) => {
+        this.setState({
+        previewImage: file.url || file.thumbUrl,
+        previewVisible: true,
+        });
+    }
+    handleChange = ({ fileList }) => this.setState({ fileList });
+    handleClick(event) {
+        this.setState({value: undefined});
     }
     render() {
         const { photoIndex, isOpen } = this.state;
+        const { previewVisible, previewImage, fileList } = this.state;
+        const uploadButton = (
+          <div>
+            <Icon type="plus" />
+            <div className="ant-upload-text">Upload</div>
+          </div>
+        );
         return (
             <div>
                 <div className="padding-top-70 padding-bottom-100 lg-inner-page">
@@ -104,9 +146,104 @@ class Overview extends Component{
                                     <h5><i className="la la-star-half-o"></i>Customer Reviews</h5>
                                     <ProgressBar />
                                     <div className="goto-review">
-                                        <a href="#">View All Review</a>
-                                        <a href="#">Add Your Review</a>
+                                        <Button className="btn-review btn">
+                                            View All Review
+                                        </Button>
+                                        <Button className="btn-review btn" onClick={this.handleShow}>
+                                            Add Your Review
+                                        </Button>
                                     </div>
+                                    <Modal show={this.state.show} onHide={this.handleClose}>
+                                        <div className="lg-listing-details-section-wrap lg-listing-add-review">
+                                            <h5><i className="la la-comment"></i>Add Your Review</h5>
+                                            <form>
+                                                <div className="row rating-input">
+                                                    <label className="col-sm-3">Overall Rating</label>
+                                                    <div className="col-sm-9">
+                                                        <div className="rating">
+                                                            <Rating
+                                                                emptySymbol="fa fa-star-o"
+                                                                fullSymbol="fa fa-star"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="row rating-input">
+                                                    <label className="col-sm-3">Service</label>
+                                                    <div className="col-sm-9">
+                                                        <div className="rating">
+                                                            <Rating
+                                                                emptySymbol="fa fa-star-o"
+                                                                fullSymbol="fa fa-star"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="row rating-input">
+                                                    <label className="col-sm-3">Quality</label>
+                                                    <div className="col-sm-9">
+                                                        <div className="rating">
+                                                            <Rating
+                                                                emptySymbol="fa fa-star-o"
+                                                                fullSymbol="fa fa-star"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="row rating-input">
+                                                    <label className="col-sm-3">Price</label>
+                                                    <div className="col-sm-9">
+                                                        <div className="rating">
+                                                            <Rating
+                                                                emptySymbol="fa fa-star-o"
+                                                                fullSymbol="fa fa-star"
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="form-group  listing-details-photo-upload row">
+                                                    <label className="col-sm-3 col-form-label">Upload Image</label>
+                                                    <div className="col-sm-9">
+                                                        <div className="clearfix">
+                                                            <Upload
+                                                                action="//jsonplaceholder.typicode.com/posts/"
+                                                                listType="picture-card"
+                                                                fileList={fileList}
+                                                                onPreview={this.handlePreview}
+                                                                onChange={this.handleChange}
+                                                                >
+                                                                {fileList.length >= 3 ? null : uploadButton}
+                                                            </Upload>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="form-group row">
+                                                    <label className="col-sm-3 col-form-label">Name</label>
+                                                    <div className="col-sm-9">
+                                                        <input type="text" className="form-control" placeholder="Your name" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-group row">
+                                                    <label className="col-sm-3 col-form-label">Email</label>
+                                                    <div className="col-sm-9">
+                                                        <input type="text" className="form-control" placeholder="Email address" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-group row">
+                                                    <label className="col-sm-3 col-form-label">Review</label>
+                                                    <div className="col-sm-9">
+                                                        <textarea className="form-control" placeholder="Write your review"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div className="form-group row">
+                                                    <label className="col-sm-3 col-form-label"></label>
+                                                    <div className="col-sm-9">
+                                                        <button className="btn">Submit Review</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </Modal>
                                 </div>
                             </div>
                             <Widgets />

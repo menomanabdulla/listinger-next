@@ -131,7 +131,7 @@ const BlogDetails = () =>(
                                             <img src="/static/images/blog/author2.jpg" className="img-fluid" alt="" />
                                         </div>
                                         <div className="commenter-info">
-                                            <span className="commenter-name">Rovert Carlos</span>
+                                            <span className="commenter-name">Rovert Ethel</span>
                                             <span className="date">28 Feb 2019</span>
                                         </div>
                                         <div className="reply">
@@ -260,7 +260,7 @@ const BlogDetails = () =>(
                                         <img src="/static/images/blog/author4.jpg" className="img-fluid" alt="" />
                                     </div>
                                     <div className="commenter-info">
-                                        <span className="commenter-name">Rovert Carlos</span>
+                                        <span className="commenter-name">Myers Flory</span>
                                         <span className="date">28 Dec 2019</span>
                                     </div>
                                     <div className="reply">

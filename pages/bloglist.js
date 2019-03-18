@@ -181,7 +181,7 @@ const BlogList = () =>(
           </div>
           <div className="row">
             <div className="col">
-              <nav className="navigation pagination mar-30">
+              <nav className="navigation pagination mar-50">
                 <div className="nav-links">
                   <a className="prev page-numbers" href="#"><i className="la la-arrow-left"></i></a>
                   <a className="page-numbers" href="#">1</a>

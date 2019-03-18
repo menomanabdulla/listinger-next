@@ -8,13 +8,12 @@ class SimpleMap extends React.Component {
       super(props);
     }
     render() {
-      console.log(this.props);
       if (!this.props.loaded) return <div>Loading...</div>;
       return (
         <Map
             google={this.props.google}
             className="map"
-            zoom={13}>
+            zoom={12}>
             <Marker
               name = { this.props.name }
               icon = { this.props.icon }

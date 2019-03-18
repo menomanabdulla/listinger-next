@@ -1,0 +1,97 @@
+
+/*------------------------------------------------------
+	 Bussiness Contact Style
+------------------------------------------------------*/
+@import './partial/variables';
+@import './partial/mixins';
+.bussiness-contact-model{
+    z-index: 99999;
+}
+.listingercontactwidget {
+    .modal-content {
+        padding: 30px 25px;
+        .modal-header {
+            padding: 0;
+            border: 0;
+            margin-bottom: 30px;
+            .modal-title {
+                font-family: $basefont;
+                font-size: 18px;
+                font-weight: 500;
+                color: $color-primary;
+                i.la {
+                    font-size: 22px;
+                    color: $color-gray3;
+                    margin-right: 10px;
+                }
+            }
+            button.close {
+                span {
+                    i {
+                        font-size: 22px;
+                        color: $color-gray3;
+                    }
+                }
+            }
+        }
+        .modal-body {
+            padding: 0;
+            .form-group {
+                margin-bottom: 20px;
+                &.mrg-b0 {
+                    margin-bottom: 0;
+                }
+                label {
+                    font-family: $basefont;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    color: $color-secondary;
+                }
+                .form-control {
+                    padding-left: 0;
+                    border: 0;
+                    border-radius: 0;
+                    font-size: 14px;
+                    color: $color-gray3;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid $color-gray2;
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                        border-color: $color-red;
+                    }
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: $color-gray3;
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: $color-gray3;
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: $color-gray3;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: $color-gray3;
+                    }
+                }
+            }
+            .button.primary-bg {
+                font-family: $basefont;
+                font-size: 14px;
+                font-weight: 500;
+                padding-left: 30px;
+                padding-right: 30px;
+                border-radius: 3px;
+                border: 0;
+                cursor: pointer;
+                background: $color-red;
+                color: $color-white;
+                height: 50px;
+                @include transition(all, .3s, ease);
+                &:hover {
+                    background: rgba($color-red, .8);
+                }
+            }
+        }
+    }
+}

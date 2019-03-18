@@ -14,7 +14,7 @@ import 'antd/dist/antd.css';
 
 const CPListing = () =>(
   <div>
-    <Head title="Listing Details"/>
+    <Head title="Listing Map"/>
     <Navigation
         imgSrc = {'/static/images/logo.png'}
         containerCls = {'static'}

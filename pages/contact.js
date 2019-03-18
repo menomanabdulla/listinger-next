@@ -16,7 +16,6 @@ const Contact = () =>(
           containerCls = {'static'}
           SearchForm = { <SearchFormOne /> } 
         />
-
         <div className="page-header page-header-bg">
             <div className="container">
                 <div className="row">

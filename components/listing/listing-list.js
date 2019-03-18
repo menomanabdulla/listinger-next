@@ -85,14 +85,6 @@ class ListingList extends Component {
                                 <Option value="cart"><i className="la la-hotel"></i> Shopping</Option>
                                 <Option value="spa"><i className="la la-hotel"></i> Spa Care</Option>
                             </Select>
-                            {/*<div className="list-grid-control-block">
-                                <div className="grid-control">
-                                    <i className="la la-th-large"></i>
-                                </div>
-                                <div className="list-control">
-                                    <i className="la la-th-list"></i>
-                                </div>
-                            </div>*/}
                         </div>
                     </div>
                     {
@@ -112,7 +104,7 @@ class ListingList extends Component {
                                                     <li><span>$</span></li>
                                                 </ul>
                                             </div>      
-                                            <span>{item.ratting}</span>(5)  
+                                            <span>{item.ratting}</span>({item.rattingCount})  
                                         </div>
                                     </div>
                                     <div className="entry-content">
@@ -147,7 +139,7 @@ class ListingList extends Component {
                                             </ul>
                                         </div>
                                         <h6 className={`entry-title ${item.availability}`}>
-                                            <a href="#">{item.title}</a>  
+                                            <a href="/listing-details">{item.title}</a>  
                                         </h6>
                                         <p>{item.description}</p>
                                         <div className="meta-cat">

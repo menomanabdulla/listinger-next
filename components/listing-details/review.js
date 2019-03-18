@@ -5,7 +5,6 @@ import { Upload, Icon, Modal } from 'antd';
 import Rating from 'react-rating';
 
 class Rerview extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {

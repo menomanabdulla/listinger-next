@@ -1,13 +1,17 @@
 /*
 |----------------------------------------------------------------------------
-| Navigation
+| Navigation Style
 |----------------------------------------------------------------------------
 */
 
 @import './partial/variables';
 @import './partial/mixins';
 
-  
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #fff;
+}
 .lg-banner-one{
     position: relative;
     .main-navbar{
@@ -41,7 +45,18 @@
                 margin: 0 15px;
             }
         }
+        .nav-link.register-link{
+            padding: 0 20px 0 0;
+            &:before{
+                content: none;
+            }
+        }
+        .nav-link.login-link{
+            padding: 0 0 0 20px;
+        }
+
     }
+    
 }
 
 .navigation-two-wrap{
@@ -277,7 +292,6 @@
     }
 }
 
-/* remon - 912 to 991 */
 @media screen and (max-width: 991px) {
     .lg-banner-one{
         .main-navbar{
@@ -302,17 +316,33 @@
             .dropdown-toggle::after{
                 top: 9px
             }
+            .dropdown.nav-item{
+                .nav-link{
+                    padding: 8px 0px;
+                }
+            }
         }
+        
        
         .nav-item-static {
             display: block;
             .nav-link{
-                margin-bottom: 15px;
                 &:before{
                     content: none;
                 }
             }
-           
+            .nav-link.login-link{
+                padding: 8px 0px;
+                span{
+                    display: none;
+                }
+            }
+            .nav-link.register-link{
+                margin-bottom: 15px;
+            }
+            .nav-btn{
+                line-height: 30px;
+            }
         }
     }
     .header-form-one{
@@ -329,6 +359,13 @@
             margin : 15px 0;
         }
     }
+    .navbar-collapse{
+        margin-top: 30px;
+    }
+    .main-navbar .navbar-nav{
+        align-items: initial;
+    }
+    
 }
 
 .btn-one{
@@ -366,16 +403,6 @@
     }
     .navigation-two-wrap .navbar-collapse{
         justify-content: flex-end;
-    }
-}
-
-
-@media screen and (max-width:991px){
-    .navbar-collapse{
-        margin-top: 30px;
-    }
-    .main-navbar .navbar-nav{
-        align-items: initial;
     }
 }
 

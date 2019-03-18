@@ -50,7 +50,7 @@ class ModalLayout extends React.Component {
                                 </ul>
                             </div>
                             <h6 className={`entry-title ${this.props.modallisting.availability}`}>
-                                <a href="#">{this.props.modallisting.title}</a>  
+                                <a href="/listing-details">{this.props.modallisting.title}</a>  
                             </h6>
                             <p>{this.props.modallisting.description}</p>
                             <div className="meta-cat">
