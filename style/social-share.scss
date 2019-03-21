@@ -33,6 +33,10 @@
         padding: 10px 30px 30px 30px;
     }
     .post-share-buttons {
+        .col-lg-3{
+            text-align: center;
+            margin-bottom: 30px;
+        }
         a {
             display: inline-block;
             width: 80px;
@@ -51,6 +55,18 @@
             }
             &.pinterest-share {
                 background: #bd081c;
+            }
+            &.linkdin-share{
+                background: #0077b5;
+            }
+            &.tumblr-share{
+                background: #bd081c;
+            }
+            &.tumblr-dribbble{
+                background: #35465c;
+            }
+            &.copy-share{
+                background: #34a853;
             }
         }
     }

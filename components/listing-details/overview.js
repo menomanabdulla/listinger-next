@@ -153,7 +153,11 @@ class Overview extends Component{
                                             Add Your Review
                                         </Button>
                                     </div>
-                                    <Modal show={this.state.show} onHide={this.handleClose}>
+                                    <Modal 
+                                    show={this.state.show} 
+                                    onHide={this.handleClose}
+                                    centered
+                                    >
                                         <div className="lg-listing-details-section-wrap lg-listing-add-review">
                                             <h5><i className="la la-comment"></i>Add Your Review</h5>
                                             <form>

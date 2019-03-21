@@ -37,6 +37,9 @@ class ListingList extends Component {
     }
     render() {
         let modalClose = () => this.setState({ modalShow: false });
+        let NewstDate = '2019-05-05T20:23:01.804Z';
+        const newDate = new Date(NewstDate).getTime(),
+        Today = new Date().getTime();
         return (
             <div className="listing-list-block">
                 <div className="listing-filter-block">
@@ -89,6 +92,7 @@ class ListingList extends Component {
                     </div>
                     {
                         this.props.listing.filterListing.map(( item, index ) => {
+                            if( newDate>Today ){
                             return (
                                 <div className="lg-listing-single listing-single-list" key = { index } >
                                     <div className="entry-thumb">
@@ -157,7 +161,7 @@ class ListingList extends Component {
                                     </div>
                                 </div>
                             
-                                )
+                                )}
                         })
                     }
                     <div className="row">

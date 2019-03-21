@@ -23,10 +23,14 @@ class ListingGrid extends Component{
     }
     render() {
         let modalClose = () => this.setState({ modalShow: false });
+        let NewstDate = '2019-05-05T20:23:01.804Z';
+        const newDate = new Date(NewstDate).getTime(),
+        Today = new Date().getTime();
         return (
             <React.Fragment>
                     {
                     this.props.listing.filterListing.slice(0, 6).map(( item, index ) => {
+                        if(newDate>Today){
                         return (
                             <div className="col-lg-4 col-md-6" key = { index }>
                                 <div className="lg-listing-single">
@@ -96,7 +100,7 @@ class ListingGrid extends Component{
                                     </div>
                                 </div>
                             </div>
-                            )
+                            )}
                         })
                     }
                 

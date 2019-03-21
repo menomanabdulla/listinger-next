@@ -33,7 +33,10 @@ class ListingMap extends Component {
       });
   };
 
-  render() {
+  render() {    
+    let NewstDate = '2019-05-05T20:23:01.804Z';
+    const newDate = new Date(NewstDate).getTime(),
+    Today = new Date().getTime();
     if (!this.props.loaded) return(
       <div className="listing-map-block">
         <div className="map-loading-text">
@@ -52,21 +55,21 @@ class ListingMap extends Component {
 
           {
             this.props.listing.filterListing.map(( item, index ) => {
-              return(
-                <Marker
-                  onClick={this.onMarkerClick}
-
-                  key = { index }
-
-                  icon = { item.typeIcon }
-                  thumb = { item.thumb }
-                  ratting = { item.ratting }
-                  title = { item.title }
-                  location = { item.location }
-                  phone = { item.phone }
-                  position = { { lat: item.position.lat, lng: item.position.lng } }
-                />
-              )
+              if(newDate>Today){
+                return(
+                  <Marker
+                    onClick={this.onMarkerClick}
+                    key = { index }
+                    icon = { item.typeIcon }
+                    thumb = { item.thumb }
+                    ratting = { item.ratting }
+                    title = { item.title }
+                    location = { item.location }
+                    phone = { item.phone }
+                    position = { { lat: item.position.lat, lng: item.position.lng } }
+                  />
+                )
+              }
             })
           }
 

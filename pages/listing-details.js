@@ -112,6 +112,7 @@ class ListingDetails extends Component{
                                                     size="lg"
                                                     aria-labelledby="contained-modal-title-vcenter"
                                                     className="cliam-modal"
+                                                    centered
                                                 >
                                                     <div className="lg-listing-details-section-wrap lg-listing-add-review">
                                                         <h5><i className="la la-comment"></i>Add Your Review</h5>
@@ -218,6 +219,7 @@ class ListingDetails extends Component{
                                                     size="lg"
                                                     aria-labelledby="contained-modal-title-vcenter"
                                                     className="social-share-modal"
+                                                    centered
                                                 >
                                                     <div className="socialsharemodal" >
                                                         <div className="gh" role="document">
@@ -232,17 +234,29 @@ class ListingDetails extends Component{
                                                                     <div className="listing-share">
                                                                         <div className="post-share-buttons">
                                                                             <div className="row">
-                                                                                <div className="col">
+                                                                                <div className="col-lg-3">
                                                                                     <a href="#" className="facebook"><i className="fa fa-facebook"></i></a>
                                                                                 </div>
-                                                                                <div className="col">
+                                                                                <div className="col-lg-3">
                                                                                     <a href="#" className="twitter twitter-share"><i className="fa fa-twitter"></i></a>
                                                                                 </div>
-                                                                                <div className="col">
+                                                                                <div className="col-lg-3">
                                                                                     <a href="#" className="google google-plus-share"><i className="fa fa-google-plus"></i></a>
                                                                                 </div>
-                                                                                <div className="col">
+                                                                                <div className="col-lg-3">
                                                                                     <a href="#" className="pinterest pinterest-share"><i className="fa fa-pinterest"></i></a>
+                                                                                </div>
+                                                                                <div className="col-lg-3">
+                                                                                    <a href="#" className="linkdin-share"><i className="fa fa-linkedin"></i></a>
+                                                                                </div>
+                                                                                <div className="col-lg-3">
+                                                                                    <a href="#" className="tumblr-share"><i className="fa fa-tumblr"></i></a>
+                                                                                </div>
+                                                                                <div className="col-lg-3">
+                                                                                    <a href="#" className="tumblr-dribbble"><i className="fa fa-dribbble"></i></a>
+                                                                                </div>
+                                                                                <div className="col-lg-3">
+                                                                                    <a href="#" className="copy-share"><i className="fa fa-copy"></i></a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>

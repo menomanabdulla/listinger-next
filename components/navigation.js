@@ -108,6 +108,7 @@ class NavbarOne extends Component {
                                         size="lg"
                                         aria-labelledby="contained-modal-title-vcenter"
                                         className="login-register-modal"
+                                        centered
                                     >
                                     <div className="lg-account-modal" id="lg-login-modal">
                                         <div className="" role="document">
@@ -153,6 +154,7 @@ class NavbarOne extends Component {
                                     size="lg"
                                     aria-labelledby="contained-modal-title-vcenter"
                                     className="login-register-modal"
+                                    centered
                                 >
                                     <div className="lg-account-modal">
                                         <div className="gh" role="document">
@@ -256,6 +258,7 @@ class NavbarOne extends Component {
                                         size="lg"
                                         aria-labelledby="contained-modal-title-vcenter"
                                         className="login-register-modal"
+                                        centered
                                     >
                                     <div className="lg-account-modal" id="lg-login-modal">
                                         <div className="" role="document">
@@ -301,6 +304,7 @@ class NavbarOne extends Component {
                                     size="lg"
                                     aria-labelledby="contained-modal-title-vcenter"
                                     className="login-register-modal"
+                                    centered
                                 >
                                     <div className="lg-account-modal">
                                         <div className="gh" role="document">
@@ -395,6 +399,7 @@ class NavbarOne extends Component {
                                         size="lg"
                                         aria-labelledby="contained-modal-title-vcenter"
                                         className="login-register-modal"
+                                        centered
                                     >
                                     <div className="lg-account-modal" id="lg-login-modal">
                                         <div className="" role="document">
@@ -440,6 +445,7 @@ class NavbarOne extends Component {
                                     size="lg"
                                     aria-labelledby="contained-modal-title-vcenter"
                                     className="login-register-modal"
+                                    centered
                                 >
                                     <div className="lg-account-modal">
                                         <div className="gh" role="document">

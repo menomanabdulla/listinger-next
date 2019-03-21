@@ -48,7 +48,11 @@ class Widgets extends Component {
                         <a href="$"><i className="fa fa-youtube-play"></i></a>
                     </div>
                     <a href="#" className="contact-button" onClick={this.handleShow}>Contact Business</a>
-                        <Modal show={this.state.show} onHide={this.handleClose} className="bussiness-contact-model">
+                        <Modal show={this.state.show}
+                         onHide={this.handleClose} 
+                         className="bussiness-contact-model"
+                         centered
+                         >
                             <div className="listingercontactwidget" id="listingercontactwidget">
                                     <div className="gh" role="document">
                                         <div className="modal-content">
