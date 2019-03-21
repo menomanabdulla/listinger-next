@@ -55,7 +55,6 @@ class ListingMap extends Component {
 
           {
             this.props.listing.filterListing.map(( item, index ) => {
-              if(newDate>Today){
                 return(
                   <Marker
                     onClick={this.onMarkerClick}
@@ -69,7 +68,6 @@ class ListingMap extends Component {
                     position = { { lat: item.position.lat, lng: item.position.lng } }
                   />
                 )
-              }
             })
           }
 

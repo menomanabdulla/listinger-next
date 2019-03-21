@@ -92,7 +92,6 @@ class ListingList extends Component {
                     </div>
                     {
                         this.props.listing.filterListing.map(( item, index ) => {
-                            if( newDate>Today ){
                             return (
                                 <div className="lg-listing-single listing-single-list" key = { index } >
                                     <div className="entry-thumb">
@@ -161,7 +160,7 @@ class ListingList extends Component {
                                     </div>
                                 </div>
                             
-                                )}
+                                )
                         })
                     }
                     <div className="row">
