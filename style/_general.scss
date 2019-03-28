@@ -61,6 +61,10 @@ a {
   line-height: 26px;
   color: $color-primary;
 }
+.modal-backdrop,
+.modal{
+    z-index: 99999999;
+}
 .common-padding {
     padding-top: 110px;
     padding-bottom: 80px;

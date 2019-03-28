@@ -16,6 +16,7 @@ class ModalLayout extends React.Component {
           {...this.props}
           size="lg"
           aria-labelledby="contained-modal-title-vcenter"
+          centered
         >
             <div className="listing-modal-block">
                 <div className="lg-listing-single">

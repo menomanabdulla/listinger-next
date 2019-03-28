@@ -1,23 +1,26 @@
 import React, { Component } from 'react';
-
-import Head from '../components/head';
+import dynamic from 'next/dynamic';
 import { Tab, Nav  } from 'react-bootstrap';
 import { Provider } from 'react-redux';
+import Head from '../components/head';
 import store from '../components/store';
 import Testimonial from '../components/testimonial';
 import ListingGrid from '../components/listing/listing-grid';
 import ListingMap from '../components/listing/listing-map';
 import FullWidthMap from '../components/full-width-map';
-import Partner from '../components/partner';
-import FooterTwo from '../components/footerTwo';
 import Navigation from '../components/navigation';
 import SearchFormTwo from '../components/search-form-two';
+import FooterTwo from '../components/footerTwo';
 
 import '../style/_general.scss';
 import '../style/banner.scss';
 import '../style/listing.scss';
 import '../style/about.scss';
 import '../style/popular-listing.scss';
+
+const Partner = dynamic(import('../components/partner'), {
+  ssr: false
+})
 
 class Home extends Component{
   constructor(props) {

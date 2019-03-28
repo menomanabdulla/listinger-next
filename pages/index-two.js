@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import dynamic from 'next/dynamic';
 import Head from '../components/head';
 import { Tab, Nav  } from 'react-bootstrap';
 import { Provider } from 'react-redux';
@@ -7,15 +8,19 @@ import Testimonial from '../components/testimonial';
 import ListingGrid from '../components/listing/listing-grid';
 import ListingMap from '../components/listing/listing-map';
 import FullWidthMap from '../components/full-width-map';
-import Partner from '../components/partner';
-import Footer from '../components/footer';
 import Navigation from '../components/navigation';
+import Footer from '../components/footer';
+
 
 import '../style/_general.scss';
 import '../style/banner.scss';
 import '../style/listing.scss';
 import '../style/about.scss';
 import '../style/popular-listing.scss';
+
+const Partner = dynamic(import('../components/partner'), {
+  ssr: false
+})
 
 
 class Home extends Component{

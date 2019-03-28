@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import { connect } from 'react-redux';
-
 class ListingMap extends Component {
   constructor(props){
     super(props);
@@ -55,6 +54,7 @@ class ListingMap extends Component {
 
           {
             this.props.listing.filterListing.map(( item, index ) => {
+              if(newDate>Today){
                 return(
                   <Marker
                     onClick={this.onMarkerClick}
@@ -68,9 +68,9 @@ class ListingMap extends Component {
                     position = { { lat: item.position.lat, lng: item.position.lng } }
                   />
                 )
+              }
             })
           }
-
           <InfoWindow
             marker={this.state.activeMarker}
             onClose={this.onInfoWindowClose}
