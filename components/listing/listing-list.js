@@ -92,73 +92,73 @@ class ListingList extends Component {
                     </div>
                     {
                         this.props.listing.filterListing.map(( item, index ) => {
-                            return (
-                                <div className="lg-listing-single listing-single-list" key = { index } >
-                                    <div className="entry-thumb">
-                                        <a href="#">
-                                            <img src={`${item.thumb}`} className="img-fluid lazy" alt="thumbnail" />
-                                        </a>
-                                        <div className="thumb-meta">
-                                            <div className="price-status">
-                                                <ul>
-                                                    <li>$</li>
-                                                    <li>$</li>
-                                                    <li><span>$</span></li>
-                                                    <li><span>$</span></li>
-                                                </ul>
-                                            </div>      
-                                            <span>{item.ratting}</span>({item.rattingCount})  
-                                        </div>
-                                    </div>
-                                    <div className="entry-content">
-                                        <div className="meta-block">
-                                            <div className="author-avatar">
-                                                <img className="img-responsive" src={`${item.authorThumb}`} alt="" />
+                                return (
+                                    <div className="lg-listing-single listing-single-list" key = { index } >
+                                        <div className="entry-thumb">
+                                            <a href="#">
+                                                <img src={`${item.thumb}`} className="img-fluid lazy" alt="thumbnail" />
+                                            </a>
+                                            <div className="thumb-meta">
+                                                <div className="price-status">
+                                                    <ul>
+                                                        <li>$</li>
+                                                        <li>$</li>
+                                                        <li><span>$</span></li>
+                                                        <li><span>$</span></li>
+                                                    </ul>
+                                                </div>      
+                                                <span>{item.ratting}</span>({item.rattingCount})  
                                             </div>
-                                            <ul className="meta-head">
-                                                <li className="preview">
-                                                    <ButtonToolbar>
-                                                        <button
-                                                            id={ index }
-                                                            variant="primary"
-                                                            className = 'popupMap btn btn-primary'
-                                                            onClick={e => this.clickHandler(e, index)}
-                                                            >
-                                                            <i className="la la-search-plus"></i>
+                                        </div>
+                                        <div className="entry-content">
+                                            <div className="meta-block">
+                                                <div className="author-avatar">
+                                                    <img className="img-responsive" src={`${item.authorThumb}`} alt="" />
+                                                </div>
+                                                <ul className="meta-head">
+                                                    <li className="preview">
+                                                        <ButtonToolbar>
+                                                            <button
+                                                                id={ index }
+                                                                variant="primary"
+                                                                className = 'popupMap btn btn-primary'
+                                                                onClick={e => this.clickHandler(e, index)}
+                                                                >
+                                                                <i className="la la-search-plus"></i>
+                                                            </button>
+                                                            <ModalLayou
+                                                                id={ index }
+                                                                show={this.state.activeModal === index}
+                                                                onHide={this.hideModal}
+                                                                modallisting = { item }
+                                                            />
+                                                        </ButtonToolbar>
+                                                    </li>
+                                                    <li className="bookmark">
+                                                        <button className="btn favorite">
+                                                            <i className="la la-heart-o"></i>
                                                         </button>
-                                                        <ModalLayou
-                                                            id={ index }
-                                                            show={this.state.activeModal === index}
-                                                            onHide={this.hideModal}
-                                                            modallisting = { item }
-                                                        />
-                                                    </ButtonToolbar>
-                                                </li>
-                                                <li className="bookmark">
-                                                    <button className="btn favorite">
-                                                        <i className="la la-heart-o"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <h6 className={`entry-title ${item.availability}`}>
-                                            <a href="/listing-details">{item.title}</a>  
-                                        </h6>
-                                        <p>{item.description}</p>
-                                        <div className="meta-cat">
-                                            <div className="categorie">
-                                                <span className={`icon ${item.typeClass}`}><i className={`la ${item.typeSign}`}></i></span>{item.type}  
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div className={`status ${item.availability}`}>
-                                                <span>{item.availability}</span>
-                                            </div>    
-                                        </div>
-                                        <div className="meta-footer">
-                                            <span className="location"><i className="la la-map-marker"></i> {item.location}</span>
-                                            <span className="phone-number"><i className="la la-phone"></i> {item.phone}</span>    
+                                            <h6 className={`entry-title ${item.availability}`}>
+                                                <a href="/listing-details">{item.title}</a>  
+                                            </h6>
+                                            <p>{item.description}</p>
+                                            <div className="meta-cat">
+                                                <div className="categorie">
+                                                    <span className={`icon ${item.typeClass}`}><i className={`la ${item.typeSign}`}></i></span>{item.type}  
+                                                </div>
+                                                <div className={`status ${item.availability}`}>
+                                                    <span>{item.availability}</span>
+                                                </div>    
+                                            </div>
+                                            <div className="meta-footer">
+                                                <span className="location"><i className="la la-map-marker"></i> {item.location}</span>
+                                                <span className="phone-number"><i className="la la-phone"></i> {item.phone}</span>    
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             )
                         })
                     }

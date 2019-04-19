@@ -69,7 +69,6 @@ class ListingMap extends Component {
                 )
             })
           }
-
           <InfoWindow
             marker={this.state.activeMarker}
             onClose={this.onInfoWindowClose}
