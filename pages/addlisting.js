@@ -2,16 +2,16 @@ import React from 'react';
 import Scrollspy from 'react-scrollspy';
 import { Select } from 'antd';
 
-
 import Head from '../components/head';
 import Navigation from '../components/navigation';
 import Footer from '../components/footer';
+import SearchFormOne from '../components/search-form-one';
 
 import 'antd/dist/antd.css';
 import '../style/_general.scss';
 import '../style/header.scss';
 import '../style/add-listing.scss';
-import SearchFormOne from '../components/search-form-one';
+
 
 const Option = Select.Option;
 

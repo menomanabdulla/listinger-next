@@ -1,8 +1,8 @@
 import React from 'react';
 import Head from '../components/head';
 import Navigation from '../components/navigation';
-import Footer from '../components/footer';
 import SearchFormOne from '../components/search-form-one';
+import Footer from '../components/footer';
 //css
 import '../style/_general.scss';
 import '../style/blog.scss';

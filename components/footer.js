@@ -1,7 +1,5 @@
 import React from 'react';
-
 import '../style/footer.scss';
-
 const Footer = () =>(
     <footer className="footer-bg">
         <div className="footer-widget-wrapper padding-tb110 padding-bottom-40">

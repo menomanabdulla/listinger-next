@@ -100,7 +100,7 @@ class NavbarOne extends Component {
                             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                             <div className="nav-item-static">
                                 <Nav.Link href="#" className="login-link" onClick={e => this.clickHandler(e, 1)}>
-                                    <i className="la la-user"></i>Login <span>or</span>
+                                    <i className="la la-user"></i>Login
                                 </Nav.Link>
                                     <Modal 
                                         show={this.state.activeModal === 1}
@@ -146,7 +146,7 @@ class NavbarOne extends Component {
                                         </div>
                                     </Modal>
                                 <Nav.Link href="#" className="register-link" onClick={e => this.clickHandler(e, 2)}>
-                                    Register
+                                    
                                 </Nav.Link>
                                 <Modal 
                                     show={this.state.activeModal === 2}
@@ -202,7 +202,7 @@ class NavbarOne extends Component {
                                 </Modal>
                                 <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
-                                    Add Listing
+                                    Listing
                                 </Nav.Link>
                             </div>
                         </Nav>
@@ -250,7 +250,7 @@ class NavbarOne extends Component {
                             <Nav.Link href="/dashboard">Dashboard</Nav.Link>
                             <div className="nav-item-static">
                                 <Nav.Link href="#" className="login-link" onClick={e => this.clickHandler(e, 3)}>
-                                    <i className="la la-user"></i>Login <span>or</span>
+                                    <i className="la la-user"></i>Login
                                 </Nav.Link>
                                     <Modal 
                                         show={this.state.activeModal === 3}
@@ -296,7 +296,7 @@ class NavbarOne extends Component {
                                         </div>
                                     </Modal>
                                 <Nav.Link href="#" className="register-link" onClick={e => this.clickHandler(e, 4)}>
-                                    Register
+                                    
                                 </Nav.Link>
                                 <Modal 
                                     show={this.state.activeModal === 4}
@@ -352,7 +352,7 @@ class NavbarOne extends Component {
                                 </Modal>
                                 <Nav.Link href="/addlisting" className="nav-btn btn btn-one">
                                     <i className="fa fa-plus"></i>
-                                    Add Listing
+                                    Listing
                                 </Nav.Link>
                             </div>
                         </Nav>

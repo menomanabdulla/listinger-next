@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import { connect } from 'react-redux';
-
 class ListingMap extends Component {
   constructor(props){
     super(props);

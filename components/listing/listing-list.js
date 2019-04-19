@@ -159,8 +159,7 @@ class ListingList extends Component {
                                         </div>
                                     </div>
                                 </div>
-                            
-                                )
+                            )
                         })
                     }
                     <div className="row">
